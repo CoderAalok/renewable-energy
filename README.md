@@ -1,6 +1,6 @@
 # Renewable Energy Transition in India: Challenges and Opportunities for Sustainable Development
 ## Environmental Studies CA1 Academic Project • Interactive Digital Showcase
-**Lovely Professional University (LPU) • Department of Environmental Studies**
+**Department of Environmental Studies**
 
 ---
 
@@ -10,7 +10,7 @@
 * **Course:** Environmental Studies (CA1)
 * **Primary Digital Product:** Research-Based Educational Documentary (5:02 mins)
 * **Digital Presentation & Evidence Portal:** Interactive Project Website Hub
-* **Institution:** Lovely Professional University (LPU)
+* **Academic Discipline:** Environmental Studies
 * **Official Evaluation Google Drive Repository:** [Google Drive Folder](https://drive.google.com/drive/folders/1n4MEGUzt7OeqC9GoL7X_GUomdXCH9SVY)
 
 > **Academic Product Hierarchy:**
@@ -22,7 +22,7 @@
 ### 📂 Project Structure
 
 ```text
-CHE PROJECT/
+RENEWABLE-ENERGY/
 ├── index.html                    # Main interactive website portal
 ├── css/
 │   ├── style.css                 # Site stylesheet
@@ -32,23 +32,24 @@ CHE PROJECT/
 │   └── script.js                 # Navigation, theme, counters, accordion, modals, report viewer
 ├── assets/
 │   ├── images/
-│   │   └── lpu_logo.png          # Lovely Professional University crest
+│   │   └── re_logo.svg           # Project emblem logo
 │   ├── documentary/
-│   │   ├── opening_thumbnail.jpg # Documentary opening frame
-│   │   └── ending_thumbnail.png  # Documentary closing frame
+│   │   └── opening_thumbnail.jpg # Documentary opening frame
 │   ├── attachments/              # Evidence-gallery figures
 │   │   ├── website_screenshot.png    # Figure 1: Website overview
 │   │   ├── main_info_section.png     # Figure 2: Main information section
 │   │   ├── doc_screenshot.png        # Figure 3: Documentary screenshot
 │   │   └── promo_reel.png            # Figure 4: Promotional reel still
 │   ├── social-media/
-│   │   ├── promo_reel.mp4            # Promotional reel (playable on the site)
+│   │   ├── promo_reel.mp4            # Promotional reel (compressed faststart, ~16 MB)
 │   │   └── promotion_opening.jpg     # Reel cover (also used as Figure 5)
 │   ├── qr/
-│   │   └── qr_code.png               # Project QR code (also used as Figure 6)
+│   │   └── qr_code.png               # Project QR code (Figure 6: Drive Folder)
 │   └── report/
 │       └── page_1.svg … page_7.svg   # Page-by-page report preview
 ├── Renewable Energy Transition in India CA1 Report (Revised).docx   # Full report
+├── .gitignore                    # Git exclusions
+├── LICENSE                       # MIT License
 └── README.md
 ```
 
@@ -58,14 +59,29 @@ Each file exists once. Figures 5 and 6 reuse images from the folders above inste
 
 ### 📑 Research Data & Citations
 
-The figures on the website come from these official publications. Re-check them against the source pages before submission and update them in `index.html` (`data-target` values in the "At a Glance" section) and in the DOCX report if they change.
+The figures on the website come from these official publications. Sourced from officially released MNRE monthly achievement reports (as of 30 September 2026) and CEA/IEA publications:
 
-| Metric | Value | Reference / Source |
-| :--- | :--- | :--- |
-| **Total Renewable-Energy Capacity** | **299.25 GW** | Ministry of New and Renewable Energy (MNRE), Govt. of India (as of 30 Sept 2026) |
-| **Solar Installed Capacity** | **171.05 GW** | MNRE, Govt. of India |
-| **Wind Installed Capacity** | **59.20 GW** | MNRE, Govt. of India |
-| **Clean Power Investment (2024)** | **83%** | International Energy Agency (IEA, 2025): share of India's power-sector investment going to clean energy |
+| Energy Source | Installed Capacity | Share of RE | Reference / Source |
+| :--- | :--- | :--- | :--- |
+| ☀️ **Solar power** | **171.05 GW** | 57.16% | [MNRE, Govt. of India](https://mnre.gov.in/en/) (as of 30 September 2026) |
+| 🌬️ **Wind power** | **59.20 GW** | 19.78% | [MNRE, Govt. of India](https://mnre.gov.in/en/) |
+| 🌱 **Bioenergy** | **11.75 GW** | 3.93% | [MNRE, Govt. of India](https://mnre.gov.in/en/) |
+| 💧 **Small hydropower** (≤ 25 MW) | **5.18 GW** | 1.73% | [MNRE, Govt. of India](https://mnre.gov.in/en/) |
+| 🏞️ **Large hydropower** (> 25 MW) | **52.06 GW** | 17.40% | [MNRE / CEA](https://mnre.gov.in/en/) |
+| ⚡ **Total renewable energy** | **299.25 GW** | **100.0%** | [MNRE, Govt. of India](https://mnre.gov.in/en/) |
+| 📈 **Clean Power Investment (2024)** | **83%** | — | [IEA World Energy Investment 2025: India](https://www.iea.org/reports/world-energy-investment-2025/india) |
+
+#### 🔗 Official Academic & Policy References
+1. **Ministry of New and Renewable Energy (MNRE), Govt. of India (2026)** — *Physical Achievements & Programme Overview: Renewable Energy Capacity*  
+   URL: [https://mnre.gov.in/en/](https://mnre.gov.in/en/)
+2. **Central Electricity Authority (CEA), Ministry of Power (2026)** — *Monthly Generation Report & Executive Power Summary*  
+   URL: [https://cea.nic.in/](https://cea.nic.in/)
+3. **International Energy Agency (IEA) (2025)** — *World Energy Investment 2025: India & Clean Energy Capital Inflows*  
+   URL: [https://www.iea.org/reports/world-energy-investment-2025/india](https://www.iea.org/reports/world-energy-investment-2025/india)
+4. **International Renewable Energy Agency (IRENA) (2026)** — *Renewable Capacity Statistics 2026*  
+   URL: [https://www.irena.org/Publications/2026/Mar/Renewable-capacity-statistics-2026](https://www.irena.org/Publications/2026/Mar/Renewable-capacity-statistics-2026)
+5. **International Energy Agency (IEA) (2024)** — *India Case Study: Clean Energy Transition & Cost of Capital Observatory*  
+   URL: [https://www.iea.org/reports/india-case-study](https://www.iea.org/reports/india-case-study)
 
 ---
 
@@ -73,14 +89,14 @@ The figures on the website come from these official publications. Re-check them 
 
 1. **Sticky Navigation Bar:**
    * Links: `Home` | `About` | `Renewable Energy` | `Challenges` | `Opportunities` | `Documentary` | `Project` | `Social Media`
-   * "Explore Project" button, scroll-progress bar, active-section highlighting.
+   * Scroll-progress bar and active-section highlighting.
    * Responsive mobile menu (closes with Esc) and a Light / Dark theme toggle that remembers the choice and otherwise follows the system setting.
 
-2. **Hero Section:** project title, slogan, LPU badge, and "Explore the Project" / "Watch Documentary" buttons.
+2. **Hero Section:** project title, slogan, academic research badge, and "Explore the Project" / "Watch Documentary" buttons.
 
 3. **Project Introduction (Why Renewable Energy Matters):** context narrative plus cards for Solar, Wind, Hydropower and Biomass.
 
-4. **India's Renewable Energy at a Glance:** animated counters (299.25 GW, 171.05 GW, 59.20 GW, 83%) with MNRE / IEA attribution. The final values are in the HTML, so they are correct without JavaScript or with reduced-motion enabled.
+4. **India's Renewable Energy at a Glance:** animated counters (299.25 GW, 171.05 GW, 59.20 GW, 83%) with MNRE, CEA, and IEA attribution, plus Capacity vs. Generation and CUF context cards. The final values are in the HTML, so they are correct without JavaScript or with reduced-motion enabled.
 
 5. **Major Renewable Energy Sources:** detailed cards for each source.
 
@@ -110,10 +126,10 @@ The figures on the website come from these official publications. Re-check them 
 
 ### 💻 How to View the Project
 
-Open `index.html` in any modern browser (Chrome, Edge, Firefox, Safari). No server or build step is needed.
-
-* Works offline: layout, icons (bundled locally), scripts, images and the promotional reel.
-* Needs internet: the documentary player (Google Drive), the Instagram link and the Google Fonts. Without internet the site falls back to system fonts.
+* **Live Digital Portal (GitHub Pages):** [https://coderaalok.github.io/renewable-energy/](https://coderaalok.github.io/renewable-energy/)
+* **Local Offline View:** Open `index.html` in any modern web browser. No server or build step required.
+* **Offline Capability:** Layout, styles, local icon fonts, scripts, evidence gallery images, and the compressed promotional reel (16 MB) work completely offline.
+* **Online Resources:** The documentary video embed (Google Drive), external Instagram post, and Google Fonts require internet connectivity (system fonts are used offline).
 
 ---
 

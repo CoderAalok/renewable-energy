@@ -49,7 +49,7 @@
   <text x="540" y="85" font-family="'Segoe UI', sans-serif" font-size="14" font-weight="600" fill="#2d6a4f">Page No: 01</text>
 
   <!-- Document Title / Header -->
-  <text x="90" y="100" font-family="'Segoe UI', sans-serif" font-weight="700" font-size="16" fill="#0f4c3a">LOVELY PROFESSIONAL UNIVERSITY • EVS CA1 REPORT</text>
+  <text x="90" y="100" font-family="'Segoe UI', sans-serif" font-weight="700" font-size="16" fill="#0f4c3a">ENVIRONMENTAL STUDIES • CA1 RESEARCH REPORT</text>
   
   <!-- Handwritten Title -->
   <text x="90" y="190" font-family="'Caveat', 'Segoe Script', cursive" font-weight="700" font-size="34" fill="#0f172a">Section 1: 1. Introduction</text>
@@ -62,13 +62,13 @@
     <text x="90" y="345" font-family="'Caveat', 'Segoe Script', 'Comic Sans MS', cursive" font-size="24" fill="#1b2a4a">Accelerating the transition to renewable energy is essential to fulfill clean energy demand.</text>
     <text x="90" y="390" font-family="'Caveat', 'Segoe Script', 'Comic Sans MS', cursive" font-size="24" fill="#1b2a4a">The primary goal of this project is to evaluate India's renewable energy pathways.</text>
     <text x="90" y="435" font-family="'Caveat', 'Segoe Script', 'Comic Sans MS', cursive" font-size="24" fill="#1b2a4a">As of 31 August 2026, India has achieved 295.55 GW total installed RE capacity.</text>
-    <text x="90" y="480" font-family="'Caveat', 'Segoe Script', 'Comic Sans MS', cursive" font-size="24" fill="#1b2a4a">Solar energy leads with 168.04 GW, followed by Wind energy at 58.52 GW.</text>
-    <text x="90" y="525" font-family="'Caveat', 'Segoe Script', 'Comic Sans MS', cursive" font-size="24" fill="#1b2a4a">Large Hydropower contributes 52.06 GW, alongside biomass and small hydro energy.</text>
+    <text x="90" y="480" font-family="'Caveat', 'Segoe Script', 'Comic Sans MS', cursive" font-size="24" fill="#1b2a4a">Solar leads with 171.05 GW, Wind at 59.20 GW, Large Hydro at 52.06 GW.</text>
+    <text x="90" y="525" font-family="'Caveat', 'Segoe Script', 'Comic Sans MS', cursive" font-size="24" fill="#1b2a4a">Bioenergy contributes 11.75 GW, and Small Hydro 5.18 GW (299.25 GW Total).</text>
     <text x="90" y="570" font-family="'Caveat', 'Segoe Script', 'Comic Sans MS', cursive" font-size="24" fill="#1b2a4a">This report accompanies our primary product: a Research-Based Educational Documentary.</text>
     <text x="90" y="615" font-family="'Caveat', 'Segoe Script', 'Comic Sans MS', cursive" font-size="24" fill="#1b2a4a">Key targets include achieving 500 GW non-fossil capacity by 2030 and Net-Zero by 2070.</text>
     <text x="90" y="660" font-family="'Caveat', 'Segoe Script', 'Comic Sans MS', cursive" font-size="24" fill="#1b2a4a">Our research highlights critical opportunities alongside technical and financial challenges.</text>
 
   <!-- Footer Watermark -->
   <rect x="90" y="1020" width="620" height="40" rx="5" fill="#e2e8f0" opacity="0.8"/>
-  <text x="400" y="1045" font-family="'Segoe UI', sans-serif" font-size="13" font-weight="600" fill="#475569" text-anchor="middle">Scanned CA1 Handwritten Submission • Environmental Studies • LPU</text>
+  <text x="400" y="1045" font-family="'Segoe UI', sans-serif" font-size="13" font-weight="600" fill="#475569" text-anchor="middle">Scanned CA1 Handwritten Submission • Environmental Studies</text>
 </svg>

@@ -49,7 +49,7 @@
   <text x="540" y="85" font-family="'Segoe UI', sans-serif" font-size="14" font-weight="600" fill="#2d6a4f">Page No: 04</text>
 
   <!-- Document Title / Header -->
-  <text x="90" y="100" font-family="'Segoe UI', sans-serif" font-weight="700" font-size="16" fill="#0f4c3a">LOVELY PROFESSIONAL UNIVERSITY • EVS CA1 REPORT</text>
+  <text x="90" y="100" font-family="'Segoe UI', sans-serif" font-weight="700" font-size="16" fill="#0f4c3a">ENVIRONMENTAL STUDIES • CA1 RESEARCH REPORT</text>
   
   <!-- Handwritten Title -->
   <text x="90" y="190" font-family="'Caveat', 'Segoe Script', cursive" font-weight="700" font-size="34" fill="#0f172a">Section 4: 4. Significance of Product / Documentary</text>
@@ -65,9 +65,9 @@
     <text x="90" y="480" font-family="'Caveat', 'Segoe Script', 'Comic Sans MS', cursive" font-size="24" fill="#1b2a4a">Awareness Significance: Harnesses digital media storytelling to inspire proactive climate action.</text>
     <text x="90" y="525" font-family="'Caveat', 'Segoe Script', 'Comic Sans MS', cursive" font-size="24" fill="#1b2a4a">The documentary bridges academic research with public awareness across multi-media platforms.</text>
     <text x="90" y="570" font-family="'Caveat', 'Segoe Script', 'Comic Sans MS', cursive" font-size="24" fill="#1b2a4a">Interactive data visualizations allow viewers to explore statistics independently.</text>
-    <text x="90" y="615" font-family="'Caveat', 'Segoe Script', 'Comic Sans MS', cursive" font-size="24" fill="#1b2a4a">Designed specifically to meet LPU EVS CA1 academic criteria with practical impact.</text>
+    <text x="90" y="615" font-family="'Caveat', 'Segoe Script', 'Comic Sans MS', cursive" font-size="24" fill="#1b2a4a">Designed specifically to meet EVS CA1 academic criteria with practical impact.</text>
 
   <!-- Footer Watermark -->
   <rect x="90" y="1020" width="620" height="40" rx="5" fill="#e2e8f0" opacity="0.8"/>
-  <text x="400" y="1045" font-family="'Segoe UI', sans-serif" font-size="13" font-weight="600" fill="#475569" text-anchor="middle">Scanned CA1 Handwritten Submission • Environmental Studies • LPU</text>
+  <text x="400" y="1045" font-family="'Segoe UI', sans-serif" font-size="13" font-weight="600" fill="#475569" text-anchor="middle">Scanned CA1 Handwritten Submission • Environmental Studies</text>
 </svg>

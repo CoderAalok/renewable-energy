@@ -4,7 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Renewable Energy Transition in India | Academic Project Showcase</title>
-    <meta name="description" content="Renewable Energy Transition in India: Challenges and Opportunities for Sustainable Development. An interactive educational website for Environmental Studies CA1, Lovely Professional University.">
+    <meta name="description" content="Renewable Energy Transition in India: Challenges and Opportunities for Sustainable Development. An interactive educational website for Environmental Studies.">
+    <link rel="icon" type="image/svg+xml" href="assets/images/re_logo.svg">
+    <link rel="canonical" href="https://coderaalok.github.io/renewable-energy/">
+
+    <!-- Social & Open Graph Metadata -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://coderaalok.github.io/renewable-energy/">
+    <meta property="og:title" content="Renewable Energy Transition in India | Academic Project Showcase">
+    <meta property="og:description" content="Challenges and Opportunities for Sustainable Development. An educational documentary and digital project hub.">
+    <meta property="og:image" content="https://coderaalok.github.io/renewable-energy/assets/documentary/opening_thumbnail.jpg">
+    <meta property="og:site_name" content="Renewable Energy Transition India">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://coderaalok.github.io/renewable-energy/">
+    <meta name="twitter:title" content="Renewable Energy Transition in India">
+    <meta name="twitter:description" content="Challenges and Opportunities for Sustainable Development. An educational documentary and digital project hub.">
+    <meta name="twitter:image" content="https://coderaalok.github.io/renewable-energy/assets/documentary/opening_thumbnail.jpg">
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "EducationalWebPage",
+          "@id": "https://coderaalok.github.io/renewable-energy/#webpage",
+          "url": "https://coderaalok.github.io/renewable-energy/",
+          "name": "Renewable Energy Transition in India",
+          "description": "Challenges and Opportunities for Sustainable Development. Academic project showcase for Environmental Studies.",
+          "author": {
+            "@type": "Person",
+            "name": "Alok Kumar Yadav"
+          }
+        },
+        {
+          "@type": "VideoObject",
+          "name": "Renewable Energy Transition in India Documentary",
+          "description": "A research-based educational video documentary exploring India's renewable energy transition.",
+          "thumbnailUrl": "https://coderaalok.github.io/renewable-energy/assets/documentary/opening_thumbnail.jpg",
+          "duration": "PT5M02S",
+          "embedUrl": "https://drive.google.com/file/d/1Qh5Iw7qBgorL5JUiw2iehr4Gr6u-Lpv2/preview",
+          "contentUrl": "https://drive.google.com/file/d/1Qh5Iw7qBgorL5JUiw2iehr4Gr6u-Lpv2/view"
+        }
+      ]
+    }
+    </script>
+
     <!-- Apply saved / system theme before first paint (prevents a light-theme flash) -->
     <script>
         (function () {
@@ -31,11 +76,20 @@
     <a href="#main-content" class="skip-link">Skip to main content</a>
     <div id="progress-bar"></div>
 
+    <noscript>
+        <div class="noscript-banner">
+            <div class="container">
+                <i class="fas fa-info-circle"></i>
+                <span><strong>JavaScript is disabled.</strong> All research text, data, and charts are fully visible, but interactive controls (theme switcher, video modal, report viewer) require JavaScript.</span>
+            </div>
+        </div>
+    </noscript>
+
     <!-- 3. STICKY NAVIGATION -->
     <header class="site-header">
         <div class="container nav-container">
             <a href="#home" class="nav-brand">
-                <img src="assets/images/lpu_logo.png" alt="LPU Logo">
+                <img src="assets/images/re_logo.svg" alt="RE Transition India Logo" width="36" height="36">
                 <span>
                     <strong>RE Transition India</strong>
                 </span>
@@ -56,7 +110,6 @@
             </nav>
 
             <div class="nav-actions">
-                <a href="#about" class="btn btn-primary btn-sm nav-cta-btn">Explore Project</a>
                 <button id="theme-toggle-btn" class="theme-toggle" type="button" aria-label="Switch between light and dark theme" title="Toggle Light/Dark Theme">
                     <i class="fas fa-moon"></i>
                 </button>
@@ -74,6 +127,11 @@
             <div class="hero-bg-art"></div>
             
             <div class="container hero-content">
+                <div class="hero-academic-pill">
+                    <i class="fas fa-seedling"></i>
+                    <span>Environmental Studies &bull; Academic Research Project</span>
+                </div>
+
                 <h1 class="hero-title">Renewable Energy Transition in India</h1>
                 <h2 class="hero-subtitle">Challenges and Opportunities for Sustainable Development</h2>
                 
@@ -183,15 +241,42 @@
                     <div class="stat-card">
                         <div class="stat-number" data-target="83" data-suffix="%">83%</div>
                         <div class="stat-title">Clean Power Investment</div>
-                        <p class="stat-desc">Power-sector investment directed towards clean energy in 2024.</p>
+                        <p class="stat-desc">Power-sector investment directed towards clean energy in 2024 (IEA).</p>
+                    </div>
+                </div>
+
+                <!-- Contextual Deep-Dive: Capacity vs. Actual Generation & Coal Share -->
+                <div class="generation-context-grid">
+                    <div class="context-card">
+                        <div class="context-card-badge"><i class="fas fa-lightbulb"></i> Generation Reality</div>
+                        <h4 class="context-card-title">Capacity vs. Generation Share</h4>
+                        <p class="context-card-text">
+                            While non-fossil sources now account for over <strong>54% of India's installed power capacity (up from 44% in 2024)</strong>, their actual share in <strong>annual electricity generation remains ~22%–24% (CEA)</strong> due to resource intermittency and diurnal solar cycles.
+                        </p>
+                    </div>
+
+                    <div class="context-card">
+                        <div class="context-card-badge"><i class="fas fa-chart-line"></i> Capacity Factor</div>
+                        <h4 class="context-card-title">Capacity Utilization Factor (CUF)</h4>
+                        <p class="context-card-text">
+                            Solar CUF in India typically averages <strong>18%–24%</strong> and wind <strong>25%–35%</strong>, whereas baseload coal thermal runs at <strong>65%–70% Plant Load Factor (PLF)</strong>, underscoring the urgency of battery storage and pumped hydro.
+                        </p>
+                    </div>
+
+                    <div class="context-card">
+                        <div class="context-card-badge"><i class="fas fa-smog"></i> Thermal Baselines</div>
+                        <h4 class="context-card-title">Coal Baseload Dependence</h4>
+                        <p class="context-card-text">
+                            Coal accounts for approximately <strong>73% of gross power generation (CEA)</strong>. A successful transition requires expanding firm, dispatchable renewables to retire legacy thermal plants without risking grid stability.
+                        </p>
                     </div>
                 </div>
 
                 <div class="data-reference-wrap">
-                    <div class="data-reference-pill">
+                    <a href="#references" class="data-reference-pill">
                         <i class="fas fa-check-circle icon-accent"></i>
-                        <strong>Data reference: MNRE and IEA</strong>
-                    </div>
+                        <strong>Data reference: MNRE Physical Progress (30 September 2026), CEA &amp; IEA World Energy Investment</strong>
+                    </a>
                 </div>
             </div>
         </section>
@@ -248,31 +333,102 @@
                             <div class="re-card-icon icon-hydro">💧</div>
                             <div>
                                 <h3 class="re-card-title">Hydropower</h3>
-                                <span class="re-card-pill pill-indigo">Grid Balancing</span>
+                                <span class="re-card-pill pill-indigo">57.24 GW Installed</span>
                             </div>
                         </div>
                         <p class="re-card-body">
-                            Flowing or stored water is used to generate electricity, providing valuable baseload stability and pumped-storage balancing capabilities.
+                            Flowing and stored water provides vital baseload stability and pumped-hydro balancing. Comprises <strong>52.06 GW large hydro</strong> and <strong>5.18 GW small hydro</strong>.
                         </p>
                         <div class="re-card-footer">
-                            <i class="fas fa-info-circle"></i> Fast-ramping capability supports grid stabilization when solar generation dips.
+                            <i class="fas fa-info-circle"></i> 52.06 GW Large Hydro (&gt;25 MW) + 5.18 GW Small Hydro (&le;25 MW).
                         </div>
                     </div>
 
-                    <!-- Biomass -->
+                    <!-- Biomass / Bioenergy -->
                     <div class="re-card">
                         <div class="re-card-header">
                             <div class="re-card-icon icon-biomass">🌱</div>
                             <div>
-                                <h3 class="re-card-title">Biomass</h3>
-                                <span class="re-card-pill pill-green">Decentralized RE</span>
+                                <h3 class="re-card-title">Bioenergy (Biomass)</h3>
+                                <span class="re-card-pill pill-green">11.75 GW Installed</span>
                             </div>
                         </div>
                         <p class="re-card-body">
-                            Organic materials, agricultural residues, and bagasse are utilized as renewable energy resources for decentralized clean power and heat.
+                            Organic materials, agricultural residues, and bagasse are utilized as renewable energy resources for decentralized clean power and heat, totaling <strong>11.75 GW</strong>.
                         </p>
                         <div class="re-card-footer">
-                            <i class="fas fa-info-circle"></i> Converts agricultural waste productively while mitigating crop stubble burning.
+                            <i class="fas fa-info-circle"></i> 11.75 GW across agro-residues, sugar bagasse cogeneration, and waste-to-energy.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- National Policy Framework & Decarbonization Roadmap -->
+                <div class="policy-roadmap-block">
+                    <div class="policy-block-header">
+                        <span class="policy-eyebrow"><i class="fas fa-university"></i> Strategic Directives</span>
+                        <h3 class="policy-heading">National Policy Framework &amp; 2030&ndash;2070 Roadmap</h3>
+                        <p class="policy-subtext">Flagship government schemes, decarbonization mandates, and United Nations Sustainable Development Goals driving India's energy transition.</p>
+                    </div>
+
+                    <div class="policy-cards-grid">
+                        <!-- 1. 500 GW Non-Fossil Target -->
+                        <div class="policy-card">
+                            <div class="policy-card-top">
+                                <span class="policy-badge badge-target">Panchamrit 2030</span>
+                                <i class="fas fa-compass policy-icon"></i>
+                            </div>
+                            <h4 class="policy-title">500 GW Non-Fossil Capacity by 2030</h4>
+                            <p class="policy-desc">Pledged at COP26 Glasgow: achieve 500 GW of non-fossil electric capacity and fulfill 50% of cumulative electric power from renewables by 2030, reducing carbon emissions by 1 billion tonnes.</p>
+                        </div>
+
+                        <!-- 2. Net Zero 2070 -->
+                        <div class="policy-card">
+                            <div class="policy-card-top">
+                                <span class="policy-badge badge-longterm">Long-Term Goal</span>
+                                <i class="fas fa-globe policy-icon"></i>
+                            </div>
+                            <h4 class="policy-title">Net Zero GHG Emissions by 2070</h4>
+                            <p class="policy-desc">India's Long-Term Low-Emission Development Strategy (LT-LEDS) submitted under the Paris Agreement, balancing economic growth and urbanization with national carbon neutrality by 2070.</p>
+                        </div>
+
+                        <!-- 3. PM Surya Ghar: Muft Bijli Yojana -->
+                        <div class="policy-card">
+                            <div class="policy-card-top">
+                                <span class="policy-badge badge-scheme">Rooftop Solar</span>
+                                <i class="fas fa-building policy-icon"></i>
+                            </div>
+                            <h4 class="policy-title">PM Surya Ghar: Muft Bijli Yojana</h4>
+                            <p class="policy-desc">Outlay of &#8377;75,021 crore launched in 2024 to solarize 1 crore (10 million) households, providing up to 300 units of free monthly electricity and decentralized residential grid feed-in.</p>
+                        </div>
+
+                        <!-- 4. PM-KUSUM Scheme -->
+                        <div class="policy-card">
+                            <div class="policy-card-top">
+                                <span class="policy-badge badge-agri">Rural &amp; Agriculture</span>
+                                <i class="fas fa-seedling policy-icon"></i>
+                            </div>
+                            <h4 class="policy-title">PM-KUSUM Scheme</h4>
+                            <p class="policy-desc">De-dieselization of Indian agriculture by installing standalone solar water pumps, solarizing existing agricultural feeders, and enabling farmers to sell surplus clean power to state discoms.</p>
+                        </div>
+
+                        <!-- 5. National Green Hydrogen Mission -->
+                        <div class="policy-card">
+                            <div class="policy-card-top">
+                                <span class="policy-badge badge-tech">Hydrogen Mission</span>
+                                <i class="fas fa-atom policy-icon"></i>
+                            </div>
+                            <h4 class="policy-title">National Green Hydrogen Mission</h4>
+                            <p class="policy-desc">&#8377;19,744 crore mission targeting 5 MMT annual production of Green Hydrogen by 2030, backed by ~125 GW associated renewable capacity, decarbonizing steel, fertilizers, and heavy transport.</p>
+                        </div>
+
+                        <!-- 6. United Nations SDG Mapping -->
+                        <div class="policy-card">
+                            <div class="policy-card-top">
+                                <span class="policy-badge badge-sdg">UN SDG Alignment</span>
+                                <i class="fas fa-shield-alt policy-icon"></i>
+                            </div>
+                            <h4 class="policy-title">UN SDG 7 &amp; SDG 13 Alignment</h4>
+                            <p class="policy-desc">Directly drives <strong>SDG 7 (Affordable and Clean Energy)</strong> by enhancing rural electrification reliability and <strong>SDG 13 (Climate Action)</strong> by mitigating industrial emissions.</p>
                         </div>
                     </div>
                 </div>
@@ -563,7 +719,7 @@
                 <div class="documentary-card-wrapper">
                     <!-- Video Preview Container -->
                     <div class="doc-preview-container" role="button" tabindex="0" aria-label="Open educational documentary video preview" data-open-video>
-                        <img loading="lazy" decoding="async" src="assets/documentary/opening_thumbnail.jpg" alt="Renewable Energy Transition in India Documentary Thumbnail" class="doc-thumbnail-img">
+                        <img loading="lazy" decoding="async" src="assets/documentary/opening_thumbnail.jpg" alt="Renewable Energy Transition in India Documentary Thumbnail" class="doc-thumbnail-img" width="1280" height="720">
                         <div class="doc-play-overlay">
                             <div class="play-btn-circle" aria-hidden="true">
                                 <i class="fas fa-play"></i>
@@ -608,6 +764,69 @@
                             </a>
                         </div>
                     </div>
+                </div>
+
+                <!-- Accessible Documentary Narrative Transcript & Captions Panel -->
+                <div class="doc-transcript-container">
+                    <details class="doc-transcript-details">
+                        <summary class="doc-transcript-summary">
+                            <span><i class="fas fa-file-alt"></i> <strong>Read Educational Narrative Transcript &amp; Chapter Overview</strong></span>
+                            <span class="transcript-tag"><i class="fas fa-book"></i> Screen Reader &amp; Text View</span>
+                        </summary>
+                        <div class="doc-transcript-body">
+                            <p class="transcript-meta-note">
+                                <em>Structured educational narrative synthesis and chapter breakdown corresponding to the 5:02 documentary. Accessible text version for screen readers, assistive technology, and offline study.</em>
+                            </p>
+                            
+                            <div class="transcript-chapter-block">
+                                <span class="transcript-time-badge">0:00 &ndash; 0:45</span>
+                                <h4 class="transcript-chapter-title">Chapter 1: Introduction &amp; The National Energy Challenge</h4>
+                                <p class="transcript-text">
+                                    Energy is the lifeblood of economic development. As the world's third-largest energy consumer, India has historically powered its manufacturing, transportation, and urban expansion on fossil fuels—chiefly domestic coal and imported crude oil. However, this heavy reliance has led to escalating urban air pollution, mounting foreign exchange expenditure, and severe climate vulnerabilities. The central question facing the nation is: how can India sustain high GDP growth while decarbonizing its energy matrix? The answer lies in the largest clean energy transition in the developing world.
+                                </p>
+                            </div>
+
+                            <div class="transcript-chapter-block">
+                                <span class="transcript-time-badge">0:45 &ndash; 1:45</span>
+                                <h4 class="transcript-chapter-title">Chapter 2: Major Renewable Energy Sources &amp; Deployment</h4>
+                                <p class="transcript-text">
+                                    The cornerstone of India's green transition is solar and wind energy. Blessed with over 300 sunny days annually and substantial solar irradiance, India has constructed ultra-mega solar parks such as Bhadla in Rajasthan and Pavagada in Karnataka. Solar photovoltaic capacity has surged past 170 GW, spanning utility-scale farms to residential rooftops. Simultaneously, onshore wind turbines across Tamil Nadu, Gujarat, and Maharashtra provide over 59 GW of complementary power, generating peak electricity during the monsoon season when solar radiation softens.
+                                </p>
+                            </div>
+
+                            <div class="transcript-chapter-block">
+                                <span class="transcript-time-badge">1:45 &ndash; 2:45</span>
+                                <h4 class="transcript-chapter-title">Chapter 3: Environmental &amp; Socio-Economic Impact</h4>
+                                <p class="transcript-text">
+                                    The transition delivers profound ecological and economic dividends. Substituting thermal coal generation with clean power avoids hundreds of millions of tonnes of CO2 emissions annually, protecting fragile ecosystems and improving public health. Economically, the renewable energy sector has emerged as a premier employment creator—generating skilled livelihoods across panel fabrication, wind turbine blade manufacturing, civil construction, engineering, and rural distributed grid maintenance.
+                                </p>
+                            </div>
+
+                            <div class="transcript-chapter-block">
+                                <span class="transcript-time-badge">2:45 &ndash; 3:45</span>
+                                <h4 class="transcript-chapter-title">Chapter 4: Technical Challenges &amp; The Intermittency Bottleneck</h4>
+                                <p class="transcript-text">
+                                    Rapid deployment introduces substantial systemic hurdles. The most acute challenge is renewable intermittency—solar produces power during daylight hours, while peak electricity demand peaks in the evening between 7 PM and 10 PM. Without massive grid-scale energy storage, surplus midday clean power risks curtailment. Furthermore, transmission congestion requires extensive Green Energy Corridors to wheel power from desert and coastal generation pockets to distant industrial load centers, alongside complex land acquisition and local ecological balances.
+                                </p>
+                            </div>
+
+                            <div class="transcript-chapter-block">
+                                <span class="transcript-time-badge">3:45 &ndash; 4:30</span>
+                                <h4 class="transcript-chapter-title">Chapter 5: Sustainable Future, Storage &amp; Technological Innovation</h4>
+                                <p class="transcript-text">
+                                    To overcome these barriers, India is pioneering round-the-clock (RTC) renewable contracts combining solar, wind, and pumped-hydro storage. Government initiatives such as the Production Linked Incentive (PLI) scheme for domestic solar PV cells and the National Green Hydrogen Mission are cultivating indigenous manufacturing supply chains. Through green hydrogen, heavy industries like steel, cement, and ammonia fertilizers can be decarbonized, transforming India from an energy importer into a net clean energy exporter.
+                                </p>
+                            </div>
+
+                            <div class="transcript-chapter-block">
+                                <span class="transcript-time-badge">4:30 &ndash; 5:02</span>
+                                <h4 class="transcript-chapter-title">Chapter 6: Conclusion &amp; The Path Forward</h4>
+                                <p class="transcript-text">
+                                    The renewable energy transition is neither purely an engineering challenge nor solely an environmental obligation—it is a socio-economic imperative for India's sustainable future. Achieving the target of 500 GW of non-fossil capacity by 2030 and net-zero greenhouse gas emissions by 2070 demands synchronized policy vision, institutional investment, community participation, and academic research. Together, India is charting the blueprint for a greener, equitable, and resilient tomorrow.
+                                </p>
+                            </div>
+                        </div>
+                    </details>
                 </div>
             </div>
         </section>
@@ -675,7 +894,7 @@
                     <!-- 1. Website Screenshot -->
                     <div class="evidence-card" role="button" tabindex="0" aria-label="View Project Website in full resolution" data-lightbox-title="Project Website">
                         <div class="evidence-img-box">
-                            <img loading="lazy" decoding="async" src="assets/attachments/website_screenshot.png" alt="Project Website" class="evidence-img">
+                            <img loading="lazy" decoding="async" src="assets/attachments/website_screenshot.png" alt="Project Website" class="evidence-img" width="1280" height="720">
                             <div class="evidence-zoom-tag"><i class="fas fa-search-plus"></i></div>
                         </div>
                         <div class="evidence-info">
@@ -687,7 +906,7 @@
                     <!-- 2. Main Information Section -->
                     <div class="evidence-card" role="button" tabindex="0" aria-label="View Main Information Section in full resolution" data-lightbox-title="Main Information Section">
                         <div class="evidence-img-box">
-                            <img loading="lazy" decoding="async" src="assets/attachments/main_info_section.png" alt="Main Information Section" class="evidence-img">
+                            <img loading="lazy" decoding="async" src="assets/attachments/main_info_section.png" alt="Main Information Section" class="evidence-img" width="1280" height="720">
                             <div class="evidence-zoom-tag"><i class="fas fa-search-plus"></i></div>
                         </div>
                         <div class="evidence-info">
@@ -699,7 +918,7 @@
                     <!-- 3. Documentary Screenshot -->
                     <div class="evidence-card" role="button" tabindex="0" aria-label="View Documentary in full resolution" data-lightbox-title="Documentary">
                         <div class="evidence-img-box">
-                            <img loading="lazy" decoding="async" src="assets/attachments/doc_screenshot.png" alt="Documentary" class="evidence-img">
+                            <img loading="lazy" decoding="async" src="assets/attachments/doc_screenshot.png" alt="Documentary" class="evidence-img" width="1280" height="720">
                             <div class="evidence-zoom-tag"><i class="fas fa-search-plus"></i></div>
                         </div>
                         <div class="evidence-info">
@@ -711,7 +930,7 @@
                     <!-- 4. Social-media promotional reel -->
                     <div class="evidence-card" role="button" tabindex="0" aria-label="View Social Media Promotional Reel in full resolution" data-lightbox-title="Social Media Promotional Reel">
                         <div class="evidence-img-box">
-                            <img loading="lazy" decoding="async" src="assets/attachments/promo_reel.png" alt="Social Media Promotional Reel" class="evidence-img">
+                            <img loading="lazy" decoding="async" src="assets/attachments/promo_reel.png" alt="Social Media Promotional Reel" class="evidence-img" width="1080" height="1920">
                             <div class="evidence-zoom-tag"><i class="fas fa-search-plus"></i></div>
                         </div>
                         <div class="evidence-info">
@@ -723,7 +942,7 @@
                     <!-- 5. Promotional Reel Cover -->
                     <div class="evidence-card" role="button" tabindex="0" aria-label="View Promotional Reel Cover in full resolution" data-lightbox-title="Promotional Reel Cover">
                         <div class="evidence-img-box">
-                            <img loading="lazy" decoding="async" src="assets/social-media/promotion_opening.jpg" alt="Promotional Reel Cover" class="evidence-img">
+                            <img loading="lazy" decoding="async" src="assets/social-media/promotion_opening.jpg" alt="Promotional Reel Cover" class="evidence-img" width="1080" height="1920">
                             <div class="evidence-zoom-tag"><i class="fas fa-search-plus"></i></div>
                         </div>
                         <div class="evidence-info">
@@ -732,15 +951,15 @@
                         </div>
                     </div>
 
-                    <!-- 6. QR Documentary -->
-                    <div class="evidence-card" role="button" tabindex="0" aria-label="View QR Documentary in full resolution" data-lightbox-title="QR Documentary">
+                    <!-- 6. QR Documentary / Drive Folder -->
+                    <div class="evidence-card" role="button" tabindex="0" aria-label="View QR – Drive Folder in full resolution" data-lightbox-title="QR – Drive Folder">
                         <div class="evidence-img-box evidence-img-box--qr">
-                            <img loading="lazy" decoding="async" src="assets/qr/qr_code.png" alt="QR Documentary" class="evidence-img evidence-img--contain">
+                            <img loading="lazy" decoding="async" src="assets/qr/qr_code.png" alt="QR – Drive Folder" class="evidence-img evidence-img--contain" width="500" height="500">
                             <div class="evidence-zoom-tag"><i class="fas fa-search-plus"></i></div>
                         </div>
                         <div class="evidence-info">
                             <span class="evidence-num-tag">Figure 6</span>
-                            <h4 class="evidence-caption">QR Documentary</h4>
+                            <h4 class="evidence-caption">QR &ndash; Drive Folder</h4>
                         </div>
                     </div>
                 </div>
@@ -786,7 +1005,7 @@
                             <tr>
                                 <td>Platform:</td>
                                 <td>
-                                    <a href="https://www.instagram.com/reel/DeOjARMiB4r/?utm_source=ig_web_copy_link" target="_blank" rel="noopener noreferrer" class="platform-link-tag">
+                                    <a href="https://www.instagram.com/reel/DeOjARMiB4r/" target="_blank" rel="noopener noreferrer" class="platform-link-tag">
                                         <i class="fab fa-instagram"></i> Instagram
                                     </a>
                                 </td>
@@ -819,7 +1038,7 @@
 
                         <!-- Single Action Button to Open/View Instagram -->
                         <div class="reel-cta">
-                            <a href="https://www.instagram.com/reel/DeOjARMiB4r/?utm_source=ig_web_copy_link" target="_blank" rel="noopener noreferrer" class="btn btn-amber">
+                            <a href="https://www.instagram.com/reel/DeOjARMiB4r/" target="_blank" rel="noopener noreferrer" class="btn btn-amber">
                                 <i class="fab fa-instagram"></i> View Reel on Instagram
                             </a>
                         </div>
@@ -867,7 +1086,22 @@
                     </div>
 
                     <div class="report-view">
-                        <img loading="lazy" decoding="async" id="report-page-img" src="assets/report/page_1.svg" alt="Report Page 1" class="report-img">
+                        <img loading="lazy" decoding="async" id="report-page-img" src="assets/report/page_1.svg" alt="Report Page 1: Introduction and Abstract" class="report-img" width="800" height="1100">
+                    </div>
+
+                    <!-- Screen-Reader & Accessible Text Digest -->
+                    <div class="report-accessible-wrap">
+                        <details class="report-accessible-details">
+                            <summary class="report-accessible-summary">
+                                <span><i class="fas fa-file-alt"></i> <strong>Read Text Digest for Selected Report Page</strong></span>
+                                <span class="transcript-tag"><i class="fas fa-book"></i> Screen Reader &amp; Text Mode</span>
+                            </summary>
+                            <div class="report-accessible-body" id="report-accessible-content" aria-live="polite">
+                                <h4>Page 1: Introduction &amp; Project Overview</h4>
+                                <p><strong>Academic Course:</strong> Environmental Studies (CA1) &bull; <strong>Department:</strong> Department of Environmental Studies</p>
+                                <p><strong>Abstract &amp; Context:</strong> India is the third-largest consumer of energy in the world. Although industrialization has historically been powered by fossil fuels, rising greenhouse gas emissions, domestic air pollution, and reliance on costly energy imports necessitate an accelerated shift toward renewable alternatives. This project explores the multifaceted dynamics of India's renewable energy transition—analyzing capacity growth, technical barriers such as intermittency and storage, policy interventions (500 GW by 2030, Net Zero 2070), and socio-economic opportunities.</p>
+                            </div>
+                        </details>
                     </div>
                 </div>
             </div>
@@ -893,6 +1127,45 @@
             </div>
         </section>
 
+        <!-- RESEARCH METHODOLOGY & DATA LIMITATIONS -->
+        <section class="section-methodology" id="methodology">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-badge"><i class="fas fa-search-plus"></i> Rigor &amp; Governance</span>
+                    <h2 class="section-title">Research Methodology &amp; Analytical Scope</h2>
+                    <p class="section-subtitle">
+                        Academic parameters, source verification criteria, and contextual constraints governing this study.
+                    </p>
+                </div>
+
+                <div class="methodology-grid">
+                    <div class="methodology-card">
+                        <div class="methodology-badge"><i class="fas fa-chart-line"></i> Official Baseline</div>
+                        <h4 class="methodology-title">Data Ingestion &amp; Snapshot Date</h4>
+                        <p class="methodology-text">
+                            Capacity statistics are synthesized from the Ministry of New and Renewable Energy (MNRE) monthly executive summary (30 September 2026), Central Electricity Authority (CEA) reports, and IEA World Energy Investment 2025. This establishes an empirical baseline for the CA1 academic evaluation period.
+                        </p>
+                    </div>
+
+                    <div class="methodology-card">
+                        <div class="methodology-badge"><i class="fas fa-random"></i> Analytic Distinction</div>
+                        <h4 class="methodology-title">Installed Capacity vs. Generation Scope</h4>
+                        <p class="methodology-text">
+                            Installed capacity (measured in GW) indicates nominal nameplate generator rating. It must not be conflated with net generation (measured in TWh or Billion Units), which accounts for variable plant load factors (CUF 18%–24% for solar vs 65%–70% for coal PLF), weather dependency, and grid curtailment constraints.
+                        </p>
+                    </div>
+
+                    <div class="methodology-card">
+                        <div class="methodology-badge"><i class="fas fa-exclamation-triangle"></i> Study Limitations</div>
+                        <h4 class="methodology-title">Academic Scope &amp; Constraints</h4>
+                        <p class="methodology-text">
+                            This project is an educational synthesis for the Environmental Studies (CA1) curriculum. Social media engagement numbers represent an initial dissemination snapshot (as of 8 October 2026). Continuous long-term grid integration modeling requires commercial dispatch software beyond the scope of this undergraduate research.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- 18. REFERENCES -->
         <section class="section-alt" id="references">
             <div class="container">
@@ -904,27 +1177,76 @@
                     </p>
                 </div>
 
-                <div class="references-list">
-                    <div class="reference-item">
-                        <i class="fas fa-university"></i>
-                        <div>
-                            <strong>Ministry of New and Renewable Energy (MNRE), Government of India</strong> (2026) <em>Physical Achievements: Renewable Energy Capacity</em>. New Delhi: MNRE.
+                <div class="references-buttons-grid">
+                    <!-- 1. MNRE Portal -->
+                    <a href="https://mnre.gov.in/en/" target="_blank" rel="noopener noreferrer" class="ref-btn-card" aria-label="Visit MNRE Official Portal">
+                        <div class="ref-btn-icon">
+                            <i class="fas fa-university"></i>
                         </div>
-                    </div>
+                        <div class="ref-btn-info">
+                            <span class="ref-btn-org">MNRE &bull; Govt. of India</span>
+                            <strong class="ref-btn-title">Ministry of New &amp; Renewable Energy</strong>
+                            <span class="ref-btn-action">
+                                Open Official Portal <i class="fas fa-arrow-right"></i>
+                            </span>
+                        </div>
+                    </a>
 
-                    <div class="reference-item">
-                        <i class="fas fa-globe-americas"></i>
-                        <div>
-                            <strong>International Energy Agency (IEA)</strong> (2025) <em>World Energy Investment 2025: India &amp; Clean Energy Capital Inflows</em>. Paris: IEA.
+                    <!-- 2. IEA World Energy Investment -->
+                    <a href="https://www.iea.org/reports/world-energy-investment-2025/india" target="_blank" rel="noopener noreferrer" class="ref-btn-card" aria-label="View IEA World Energy Investment 2025 India Report">
+                        <div class="ref-btn-icon">
+                            <i class="fas fa-chart-line"></i>
                         </div>
-                    </div>
+                        <div class="ref-btn-info">
+                            <span class="ref-btn-org">IEA Report (2025)</span>
+                            <strong class="ref-btn-title">World Energy Investment: India</strong>
+                            <span class="ref-btn-action">
+                                Open IEA Report <i class="fas fa-arrow-right"></i>
+                            </span>
+                        </div>
+                    </a>
 
-                    <div class="reference-item">
-                        <i class="fas fa-atom"></i>
-                        <div>
-                            <strong>International Renewable Energy Agency (IRENA)</strong> (2026) <em>Renewable Capacity Statistics 2026</em>. Abu Dhabi: IRENA.
+                    <!-- 3. IRENA Capacity Statistics -->
+                    <a href="https://www.irena.org/Publications/2026/Mar/Renewable-capacity-statistics-2026" target="_blank" rel="noopener noreferrer" class="ref-btn-card" aria-label="View IRENA Renewable Capacity Statistics 2026">
+                        <div class="ref-btn-icon">
+                            <i class="fas fa-atom"></i>
                         </div>
-                    </div>
+                        <div class="ref-btn-info">
+                            <span class="ref-btn-org">IRENA Publication (2026)</span>
+                            <strong class="ref-btn-title">Renewable Capacity Statistics</strong>
+                            <span class="ref-btn-action">
+                                Open Publication <i class="fas fa-arrow-right"></i>
+                            </span>
+                        </div>
+                    </a>
+
+                    <!-- 4. IEA India Case Study -->
+                    <a href="https://www.iea.org/reports/india-case-study" target="_blank" rel="noopener noreferrer" class="ref-btn-card" aria-label="View IEA India Clean Energy Case Study">
+                        <div class="ref-btn-icon">
+                            <i class="fas fa-file-alt"></i>
+                        </div>
+                        <div class="ref-btn-info">
+                            <span class="ref-btn-org">IEA Analysis</span>
+                            <strong class="ref-btn-title">India Clean Energy Case Study</strong>
+                            <span class="ref-btn-action">
+                                Open Case Study <i class="fas fa-arrow-right"></i>
+                            </span>
+                        </div>
+                    </a>
+
+                    <!-- 5. CEA Portal & Generation Data -->
+                    <a href="https://cea.nic.in/" target="_blank" rel="noopener noreferrer" class="ref-btn-card" aria-label="Visit Central Electricity Authority Portal">
+                        <div class="ref-btn-icon">
+                            <i class="fas fa-building"></i>
+                        </div>
+                        <div class="ref-btn-info">
+                            <span class="ref-btn-org">CEA &bull; Ministry of Power</span>
+                            <strong class="ref-btn-title">Central Electricity Authority</strong>
+                            <span class="ref-btn-action">
+                                Open Official Portal &amp; Data <i class="fas fa-arrow-right"></i>
+                            </span>
+                        </div>
+                    </a>
                 </div>
             </div>
         </section>
@@ -940,7 +1262,7 @@
 
             <p class="footer-creator">
                 <span class="footer-creator-badge">
-                    <i class="fas fa-user-graduate"></i> Creator: <strong>Alok Kumar Yadav</strong>
+                    <i class="fas fa-user-graduate"></i> Student Researcher: <strong>Alok Kumar Yadav</strong> &bull; Course: <strong>Environmental Studies (CA1)</strong>
                 </span>
             </p>
 
@@ -950,11 +1272,6 @@
                 <li><a href="#social-media">Social Media</a></li>
                 <li><a href="#references">References</a></li>
             </ul>
-
-            <div class="footer-university-brand">
-                <img loading="lazy" decoding="async" src="assets/images/lpu_logo.png" alt="Lovely Professional University Logo">
-                <span>Lovely Professional University (LPU)</span>
-            </div>
         </div>
     </footer>
 
@@ -973,10 +1290,18 @@
         <div class="modal-body modal-body--wide">
             <button class="modal-close" type="button" aria-label="Close documentary video" data-close-modal>&times;</button>
             <div class="doc-video-player-container">
+                <div class="video-loading-placeholder" id="video-loading-placeholder">
+                    <div class="video-spinner"></div>
+                    <span class="video-loading-title">Connecting to Documentary Stream...</span>
+                    <span class="video-loading-hint">If video does not load or you are offline, use "Fullscreen (Drive)" below.</span>
+                </div>
                 <iframe id="doc-modal-video-frame" 
                         data-src="https://drive.google.com/file/d/1Qh5Iw7qBgorL5JUiw2iehr4Gr6u-Lpv2/preview?autoplay=1" 
                         title="Renewable Energy Transition in India Documentary" 
-                        allow="autoplay; fullscreen; encrypted-media; picture-in-picture">
+                        allow="autoplay; fullscreen; encrypted-media; picture-in-picture"
+                        allowfullscreen="true"
+                        webkitallowfullscreen="true"
+                        mozallowfullscreen="true">
                 </iframe>
             </div>
             <div class="video-meta-row">
@@ -989,8 +1314,11 @@
                     </div>
                 </div>
                 <div class="video-actions">
+                    <a href="https://drive.google.com/file/d/1Qh5Iw7qBgorL5JUiw2iehr4Gr6u-Lpv2/view" target="_blank" rel="noopener noreferrer" class="btn btn-amber btn-sm">
+                        <i class="fas fa-play"></i> Fullscreen (Drive)
+                    </a>
                     <a href="https://drive.google.com/drive/folders/1n4MEGUzt7OeqC9GoL7X_GUomdXCH9SVY" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
-                        <i class="fab fa-google-drive"></i> Drive Documentary
+                        <i class="fab fa-google-drive"></i> Drive Folder
                     </a>
                 </div>
             </div>
