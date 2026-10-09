@@ -1,0 +1,1006 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Renewable Energy Transition in India | Academic Project Showcase</title>
+    <meta name="description" content="Renewable Energy Transition in India: Challenges and Opportunities for Sustainable Development. An interactive educational website for Environmental Studies CA1, Lovely Professional University.">
+    <!-- Apply saved / system theme before first paint (prevents a light-theme flash) -->
+    <script>
+        (function () {
+            try {
+                var theme = localStorage.getItem('re_theme');
+                if (!theme && window.matchMedia('(prefers-color-scheme: dark)').matches) theme = 'dark';
+                if (theme === 'dark') document.documentElement.setAttribute('data-theme', 'dark');
+            } catch (e) { /* storage unavailable: stay on the default theme */ }
+        })();
+    </script>
+
+    <!-- Fonts (needs internet; falls back to system fonts offline) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&amp;family=Outfit:wght@500;600;700;800;900&amp;display=swap">
+
+    <!-- Icons (local subset of Font Awesome Free) and site styles -->
+    <link rel="stylesheet" href="css/icons.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Accessibility Skip Link -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <div id="progress-bar"></div>
+
+    <!-- 3. STICKY NAVIGATION -->
+    <header class="site-header">
+        <div class="container nav-container">
+            <a href="#home" class="nav-brand">
+                <img src="assets/images/lpu_logo.png" alt="LPU Logo">
+                <span>
+                    <strong>RE Transition India</strong>
+                </span>
+            </a>
+
+            <!-- Strict prompt navigation links -->
+            <nav aria-label="Main Navigation">
+                <ul class="nav-links" id="primary-nav-links">
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#renewable-energy">Renewable Energy</a></li>
+                    <li><a href="#challenges">Challenges</a></li>
+                    <li><a href="#opportunities">Opportunities</a></li>
+                    <li><a class="nav-link-highlight" href="#documentary">Documentary</a></li>
+                    <li><a href="#project">Project</a></li>
+                    <li><a href="#social-media">Social Media</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-actions">
+                <a href="#about" class="btn btn-primary btn-sm nav-cta-btn">Explore Project</a>
+                <button id="theme-toggle-btn" class="theme-toggle" type="button" aria-label="Switch between light and dark theme" title="Toggle Light/Dark Theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="hamburger" type="button" aria-label="Toggle Navigation Menu" aria-expanded="false" aria-controls="primary-nav-links">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main id="main-content" tabindex="-1">
+
+        <!-- 4. CINEMATIC HERO SECTION -->
+        <section id="home" class="hero-section">
+            <div class="hero-bg-art"></div>
+            
+            <div class="container hero-content">
+                <h1 class="hero-title">Renewable Energy Transition in India</h1>
+                <h2 class="hero-subtitle">Challenges and Opportunities for Sustainable Development</h2>
+                
+                <p class="hero-intro">
+                    Exploring India's transition towards cleaner energy through research, technology and sustainable development.
+                </p>
+
+                <div class="hero-btns">
+                    <a href="#about" class="btn btn-primary">
+                        <i class="fas fa-compass"></i> Explore the Project
+                    </a>
+                    <a href="#documentary" class="btn btn-amber" data-open-video>
+                        <i class="fas fa-play-circle"></i> Watch Documentary
+                    </a>
+                </div>
+
+                <a href="#about" class="scroll-indicator">
+                    <span>Explore Research</span>
+                    <i class="fas fa-chevron-down"></i>
+                </a>
+            </div>
+        </section>
+
+        <!-- 5. PROJECT INTRODUCTION: WHY RENEWABLE ENERGY MATTERS -->
+        <section id="about">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Why Renewable Energy Matters</h2>
+                    <p class="section-subtitle">
+                        Energy is essential for India's economic growth and human development, but increasing dependence on fossil fuels creates critical environmental and energy-security challenges.
+                    </p>
+                </div>
+
+                <div class="intro-lead-box">
+                    <p class="intro-lead-text">
+                        India is the world's third-largest energy consumer. While coal, petroleum, and natural gas have historically fueled industrialization, their combustion produces significant greenhouse gas emissions and urban air pollution. <strong>The renewable energy transition provides a cleaner alternative</strong> derived from naturally replenishing resources—curbing carbon emissions while ensuring long-term national energy sovereignty and sustainable development.
+                    </p>
+                </div>
+
+                <!-- 4 Concise Introductory Blocks -->
+                <div class="sources-overview-grid">
+                    <div class="source-overview-card">
+                        <div class="source-icon icon-solar">☀️</div>
+                        <h3 class="source-card-title">Solar Energy</h3>
+                        <p class="source-card-text">
+                            Harnessing direct sunlight through photovoltaic cells and large-scale solar parks to generate clean electricity.
+                        </p>
+                    </div>
+
+                    <div class="source-overview-card">
+                        <div class="source-icon icon-wind">🌬️</div>
+                        <h3 class="source-card-title">Wind Energy</h3>
+                        <p class="source-card-text">
+                            Converting kinetic air motion into electric power utilizing onshore and offshore aerodynamic wind turbines.
+                        </p>
+                    </div>
+
+                    <div class="source-overview-card">
+                        <div class="source-icon icon-hydro">💧</div>
+                        <h3 class="source-card-title">Hydropower</h3>
+                        <p class="source-card-text">
+                            Utilizing the kinetic energy of flowing or stored reservoir water to supply reliable baseload and grid flexibility.
+                        </p>
+                    </div>
+
+                    <div class="source-overview-card">
+                        <div class="source-icon icon-biomass">🌱</div>
+                        <h3 class="source-card-title">Biomass</h3>
+                        <p class="source-card-text">
+                            Converting organic agricultural residue, bagasse, and sustainable organic materials into bio-power and heat.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. INDIA'S RENEWABLE ENERGY AT A GLANCE (STATISTICS) -->
+        <section id="glance" class="glance-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-badge"><i class="fas fa-chart-line"></i> Official Data</span>
+                    <h2 class="section-title">India's Renewable Energy at a Glance</h2>
+                    <p class="section-subtitle">
+                        Key figures documenting India's rapid clean energy expansion, sourced from MNRE and IEA.
+                    </p>
+                </div>
+
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-number" data-target="299.25" data-suffix=" GW">299.25 GW</div>
+                        <div class="stat-title">Total Renewable Capacity</div>
+                        <p class="stat-desc">Total installed renewable-energy capacity across India (as of 30 September 2026).</p>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-number" data-target="171.05" data-suffix=" GW">171.05 GW</div>
+                        <div class="stat-title">Solar Capacity</div>
+                        <p class="stat-desc">Installed solar photovoltaic capacity, leading national clean energy deployment.</p>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-number" data-target="59.20" data-suffix=" GW">59.20 GW</div>
+                        <div class="stat-title">Wind Capacity</div>
+                        <p class="stat-desc">Installed wind energy generation capacity across high-potential coastal and desert corridors.</p>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-number" data-target="83" data-suffix="%">83%</div>
+                        <div class="stat-title">Clean Power Investment</div>
+                        <p class="stat-desc">Power-sector investment directed towards clean energy in 2024.</p>
+                    </div>
+                </div>
+
+                <div class="data-reference-wrap">
+                    <div class="data-reference-pill">
+                        <i class="fas fa-check-circle icon-accent"></i>
+                        <strong>Data reference: MNRE and IEA</strong>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. MAJOR RENEWABLE ENERGY SOURCES -->
+        <section id="renewable-energy">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-badge"><i class="fas fa-solar-panel"></i> Clean Technologies</span>
+                    <h2 class="section-title">Major Renewable Energy Sources</h2>
+                    <p class="section-subtitle">
+                        Four core generation pillars powering India's low-carbon energy matrix.
+                    </p>
+                </div>
+
+                <div class="re-sources-grid">
+                    <!-- Solar -->
+                    <div class="re-card">
+                        <div class="re-card-header">
+                            <div class="re-card-icon icon-solar">☀️</div>
+                            <div>
+                                <h3 class="re-card-title">Solar Energy</h3>
+                                <span class="re-card-pill pill-amber">171.05 GW Installed</span>
+                            </div>
+                        </div>
+                        <p class="re-card-body">
+                            Solar photovoltaic systems convert sunlight directly into electricity and can be deployed through large solar parks and rooftop systems.
+                        </p>
+                        <div class="re-card-footer">
+                            <i class="fas fa-info-circle"></i> Scales from ultra-mega solar parks to decentralized residential rooftops.
+                        </div>
+                    </div>
+
+                    <!-- Wind -->
+                    <div class="re-card">
+                        <div class="re-card-header">
+                            <div class="re-card-icon icon-wind">🌬️</div>
+                            <div>
+                                <h3 class="re-card-title">Wind Energy</h3>
+                                <span class="re-card-pill pill-sky">59.20 GW Installed</span>
+                            </div>
+                        </div>
+                        <p class="re-card-body">
+                            Wind turbines convert the kinetic energy of moving air into electricity across onshore windy plains and offshore coastal sites.
+                        </p>
+                        <div class="re-card-footer">
+                            <i class="fas fa-info-circle"></i> High concentration in coastal Tamil Nadu, Gujarat, Rajasthan, and Maharashtra.
+                        </div>
+                    </div>
+
+                    <!-- Hydropower -->
+                    <div class="re-card">
+                        <div class="re-card-header">
+                            <div class="re-card-icon icon-hydro">💧</div>
+                            <div>
+                                <h3 class="re-card-title">Hydropower</h3>
+                                <span class="re-card-pill pill-indigo">Grid Balancing</span>
+                            </div>
+                        </div>
+                        <p class="re-card-body">
+                            Flowing or stored water is used to generate electricity, providing valuable baseload stability and pumped-storage balancing capabilities.
+                        </p>
+                        <div class="re-card-footer">
+                            <i class="fas fa-info-circle"></i> Fast-ramping capability supports grid stabilization when solar generation dips.
+                        </div>
+                    </div>
+
+                    <!-- Biomass -->
+                    <div class="re-card">
+                        <div class="re-card-header">
+                            <div class="re-card-icon icon-biomass">🌱</div>
+                            <div>
+                                <h3 class="re-card-title">Biomass</h3>
+                                <span class="re-card-pill pill-green">Decentralized RE</span>
+                            </div>
+                        </div>
+                        <p class="re-card-body">
+                            Organic materials, agricultural residues, and bagasse are utilized as renewable energy resources for decentralized clean power and heat.
+                        </p>
+                        <div class="re-card-footer">
+                            <i class="fas fa-info-circle"></i> Converts agricultural waste productively while mitigating crop stubble burning.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 8. THE TRANSITION: VISUAL STORYTELLING -->
+        <section class="section-alt" id="transition">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-badge"><i class="fas fa-random"></i> Structural Transformation</span>
+                    <h2 class="section-title">The Energy Transition</h2>
+                    <p class="section-subtitle">
+                        A structured visual progression from fossil dependence to a resilient, low-carbon energy ecosystem.
+                    </p>
+                </div>
+
+                <div class="transition-flow-container">
+                    <div class="transition-steps-grid">
+                        
+                        <!-- Conventional Energy -->
+                        <div class="transition-card stage-conv">
+                            <span class="transition-step-badge badge-conv">Step 1 — Baseline</span>
+                            <h3 class="transition-card-title">Conventional Energy</h3>
+                            <ul class="transition-list">
+                                <li><i class="fas fa-times-circle icon-danger"></i> Coal Power Generation</li>
+                                <li><i class="fas fa-times-circle icon-danger"></i> Petroleum Fuel Reliance</li>
+                                <li><i class="fas fa-times-circle icon-danger"></i> Natural Gas Combustion</li>
+                            </ul>
+                            <p class="transition-note">
+                                Finite fuels, high greenhouse emissions, and urban pollution.
+                            </p>
+                        </div>
+
+                        <!-- Connector Arrow 1 -->
+                        <div class="transition-arrow">
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+
+                        <!-- Transition Requirements -->
+                        <div class="transition-card stage-req">
+                            <span class="transition-step-badge badge-req">Step 2 — Enablers</span>
+                            <h3 class="transition-card-title">Clean Energy Transition</h3>
+                            <ul class="transition-list">
+                                <li><i class="fas fa-check icon-amber"></i> Renewable Energy Expansion</li>
+                                <li><i class="fas fa-check icon-amber"></i> Battery &amp; Pumped Storage</li>
+                                <li><i class="fas fa-check icon-amber"></i> Modern Grid Transmission</li>
+                                <li><i class="fas fa-check icon-amber"></i> Capital &amp; Technology Investment</li>
+                            </ul>
+                            <p class="transition-note">
+                                Modernizing power infrastructure and balancing intermittency.
+                            </p>
+                        </div>
+
+                        <!-- Connector Arrow 2 -->
+                        <div class="transition-arrow">
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+
+                        <!-- Sustainable System -->
+                        <div class="transition-card stage-out">
+                            <span class="transition-step-badge badge-out">Step 3 — Outcome</span>
+                            <h3 class="transition-card-title">Sustainable Energy System</h3>
+                            <ul class="transition-list">
+                                <li><i class="fas fa-check-double icon-accent"></i> Cleaner Air &amp; Decarbonization</li>
+                                <li><i class="fas fa-check-double icon-accent"></i> Long-Term Energy Security</li>
+                                <li><i class="fas fa-check-double icon-accent"></i> Sustainable Development &amp; Jobs</li>
+                            </ul>
+                            <p class="transition-note">
+                                Equitable, self-reliant, Net-Zero clean growth.
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 9. CHALLENGES -->
+        <section id="challenges">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-badge pill-amber"><i class="fas fa-exclamation-triangle"></i> Critical Hurdles</span>
+                    <h2 class="section-title">Challenges of India's Renewable Energy Transition</h2>
+                    <p class="section-subtitle">
+                        Click any card to inspect the structural challenges and technical considerations identified in the research.
+                    </p>
+                </div>
+
+                <div class="challenges-grid">
+                    <!-- 1. Variable Generation -->
+                    <div class="challenge-card" role="button" tabindex="0" aria-expanded="false" aria-label="Toggle details for Variable Generation challenge">
+                        <div class="challenge-header">
+                            <div class="challenge-icon"><i class="fas fa-cloud-sun"></i></div>
+                            <div>
+                                <h3 class="challenge-title">Variable Generation</h3>
+                            </div>
+                        </div>
+                        <p class="challenge-desc">
+                            Solar and wind generation depend on sunlight and weather conditions, causing fluctuations in power output.
+                        </p>
+                        <div class="challenge-accordion-detail">
+                            <i class="fas fa-arrow-circle-right"></i> Solution: Hybrid wind-solar parks, responsive grid controls, and flexible fast-ramping generation.
+                        </div>
+                    </div>
+
+                    <!-- 2. Energy Storage -->
+                    <div class="challenge-card" role="button" tabindex="0" aria-expanded="false" aria-label="Toggle details for Energy Storage challenge">
+                        <div class="challenge-header">
+                            <div class="challenge-icon"><i class="fas fa-battery-half"></i></div>
+                            <div>
+                                <h3 class="challenge-title">Energy Storage</h3>
+                            </div>
+                        </div>
+                        <p class="challenge-desc">
+                            Storage is required to balance renewable generation and electricity demand across day and night cycles.
+                        </p>
+                        <div class="challenge-accordion-detail">
+                            <i class="fas fa-arrow-circle-right"></i> Solution: Grid-scale Battery Energy Storage Systems (BESS) and Pumped-Storage Hydropower (PSH).
+                        </div>
+                    </div>
+
+                    <!-- 3. Transmission Infrastructure -->
+                    <div class="challenge-card" role="button" tabindex="0" aria-expanded="false" aria-label="Toggle details for Transmission Infrastructure challenge">
+                        <div class="challenge-header">
+                            <div class="challenge-icon"><i class="fas fa-broadcast-tower"></i></div>
+                            <div>
+                                <h3 class="challenge-title">Transmission Infrastructure</h3>
+                            </div>
+                        </div>
+                        <p class="challenge-desc">
+                            Renewable resources are not always located near areas with high electricity demand, requiring long-distance transmission.
+                        </p>
+                        <div class="challenge-accordion-detail">
+                            <i class="fas fa-arrow-circle-right"></i> Solution: Green Energy Corridors (GEC) and High-Voltage Direct Current (HVDC) lines from RE zones to load centers.
+                        </div>
+                    </div>
+
+                    <!-- 4. Financing -->
+                    <div class="challenge-card" role="button" tabindex="0" aria-expanded="false" aria-label="Toggle details for Financing challenge">
+                        <div class="challenge-header">
+                            <div class="challenge-icon"><i class="fas fa-coins"></i></div>
+                            <div>
+                                <h3 class="challenge-title">Financing</h3>
+                            </div>
+                        </div>
+                        <p class="challenge-desc">
+                            High financing costs can affect renewable-energy projects due to upfront capital expenditures.
+                        </p>
+                        <div class="challenge-accordion-detail">
+                            <i class="fas fa-arrow-circle-right"></i> Solution: Sovereign Green Bonds, multilateral climate financing, and risk-mitigation guarantees.
+                        </div>
+                    </div>
+
+                    <!-- 5. Land & Environment -->
+                    <div class="challenge-card" role="button" tabindex="0" aria-expanded="false" aria-label="Toggle details for Land and Environment challenge">
+                        <div class="challenge-header">
+                            <div class="challenge-icon"><i class="fas fa-tree"></i></div>
+                            <div>
+                                <h3 class="challenge-title">Land &amp; Environment</h3>
+                            </div>
+                        </div>
+                        <p class="challenge-desc">
+                            Large projects require land and can create environmental and social considerations that require careful management.
+                        </p>
+                        <div class="challenge-accordion-detail">
+                            <i class="fas fa-arrow-circle-right"></i> Solution: Rooftop solar expansion, Agri-PV dual farming, and floating solar arrays on water reservoirs.
+                        </div>
+                    </div>
+
+                    <!-- 6. Distribution Companies -->
+                    <div class="challenge-card" role="button" tabindex="0" aria-expanded="false" aria-label="Toggle details for Distribution Companies challenge">
+                        <div class="challenge-header">
+                            <div class="challenge-icon"><i class="fas fa-building"></i></div>
+                            <div>
+                                <h3 class="challenge-title">Distribution Companies</h3>
+                            </div>
+                        </div>
+                        <p class="challenge-desc">
+                            The financial condition of electricity distribution companies (DISCOMs) can influence investment and timely power payments.
+                        </p>
+                        <div class="challenge-accordion-detail">
+                            <i class="fas fa-arrow-circle-right"></i> Solution: Smart metering reforms, Revamped Distribution Sector Scheme (RDSS), and tariff rationalization.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 10. OPPORTUNITIES -->
+        <section class="section-alt" id="opportunities">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-badge"><i class="fas fa-lightbulb"></i> Positive Pathways</span>
+                    <h2 class="section-title">Opportunities for Sustainable Development</h2>
+                    <p class="section-subtitle">
+                        Accelerating clean energy strengthens economic growth, technological self-reliance, and public health.
+                    </p>
+                </div>
+
+                <div class="opportunities-grid">
+                    <!-- 1. Energy Security -->
+                    <div class="opportunity-card">
+                        <div class="opp-header">
+                            <div class="opp-icon"><i class="fas fa-shield-alt"></i></div>
+                            <h3 class="opp-title">Energy Security</h3>
+                        </div>
+                        <p class="opp-desc">
+                            Diversifying into domestic solar and wind reduces exposure to volatile international fossil fuel markets and geopolitical supply risks.
+                        </p>
+                    </div>
+
+                    <!-- 2. Reduced Fossil-Fuel Dependence -->
+                    <div class="opportunity-card">
+                        <div class="opp-header">
+                            <div class="opp-icon"><i class="fas fa-smog"></i></div>
+                            <h3 class="opp-title">Reduced Fossil Dependence</h3>
+                        </div>
+                        <p class="opp-desc">
+                            Curtailing coal and crude oil consumption saves vital foreign exchange and curtails hazardous urban air pollution.
+                        </p>
+                    </div>
+
+                    <!-- 3. Clean Technology -->
+                    <div class="opportunity-card">
+                        <div class="opp-header">
+                            <div class="opp-icon"><i class="fas fa-microchip"></i></div>
+                            <h3 class="opp-title">Clean Technology</h3>
+                        </div>
+                        <p class="opp-desc">
+                            Catalyzes research and industrial innovation in green hydrogen, advanced battery storage, smart grids, and electric mobility.
+                        </p>
+                    </div>
+
+                    <!-- 4. Employment Generation -->
+                    <div class="opportunity-card">
+                        <div class="opp-header">
+                            <div class="opp-icon"><i class="fas fa-user-friends"></i></div>
+                            <h3 class="opp-title">Employment Generation</h3>
+                        </div>
+                        <p class="opp-desc">
+                            Creates diverse green jobs in equipment manufacturing, installation engineering, maintenance, and distribution across urban and rural India.
+                        </p>
+                    </div>
+
+                    <!-- 5. Domestic Manufacturing -->
+                    <div class="opportunity-card">
+                        <div class="opp-header">
+                            <div class="opp-icon"><i class="fas fa-industry"></i></div>
+                            <h3 class="opp-title">Domestic Manufacturing</h3>
+                        </div>
+                        <p class="opp-desc">
+                            Incentivizes indigenous manufacturing of solar cells, modules, and wind turbines under national Make-in-India and PLI initiatives.
+                        </p>
+                    </div>
+
+                    <!-- 6. Environmental Protection -->
+                    <div class="opportunity-card">
+                        <div class="opp-header">
+                            <div class="opp-icon"><i class="fas fa-seedling"></i></div>
+                            <h3 class="opp-title">Environmental Protection</h3>
+                        </div>
+                        <p class="opp-desc">
+                            Substantially reduces carbon footprint and water usage compared to thermal power, mitigating climate vulnerability and preserving biodiversity.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Prompt required visual statement -->
+                <div class="opportunity-statement-box">
+                    <p class="opportunity-statement-text">
+                        “The renewable energy transition is not only an environmental necessity it is also an opportunity for India's economic and technological development.”
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 11. DOCUMENTARY SECTION (PRIMARY PRODUCT) -->
+        <section id="documentary">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Watch the Documentary</h2>
+                    <p class="section-subtitle">
+                        An original research-based educational video documentary presenting the key findings, challenges, and opportunities of India's clean energy transition.
+                    </p>
+                </div>
+
+                <div class="documentary-card-wrapper">
+                    <!-- Video Preview Container -->
+                    <div class="doc-preview-container" role="button" tabindex="0" aria-label="Open educational documentary video preview" data-open-video>
+                        <img loading="lazy" decoding="async" src="assets/documentary/opening_thumbnail.jpg" alt="Renewable Energy Transition in India Documentary Thumbnail" class="doc-thumbnail-img">
+                        <div class="doc-play-overlay">
+                            <div class="play-btn-circle" aria-hidden="true">
+                                <i class="fas fa-play"></i>
+                            </div>
+                            <span class="play-label">Click to Play Documentary</span>
+                        </div>
+                    </div>
+
+                    <!-- Video Meta Banner -->
+                    <div class="doc-meta-banner">
+                        <div class="doc-badge-row">
+                            <span class="doc-product-badge">Primary Project Product</span>
+                            <span class="doc-duration-badge"><i class="far fa-clock"></i> Duration: 5:02 mins</span>
+                            <span class="doc-duration-badge"><i class="fas fa-university"></i> Academic Evaluation</span>
+                        </div>
+
+                        <h3 class="doc-title">Renewable Energy Transition in India</h3>
+                        
+                        <p class="doc-description">
+                            A short educational documentary exploring India's renewable-energy transition, its challenges and opportunities for sustainable development.
+                        </p>
+
+                        <!-- Documentary chapter timestamps -->
+                        <div class="chapter-block">
+                            <span class="chapter-heading">Documentary Chapters</span>
+                            <ul class="chapter-list" aria-label="Documentary chapters">
+                                <li><span class="chapter-time">0:00 &ndash; 0:45</span> Introduction &amp; Energy Challenge</li>
+                                <li><span class="chapter-time">0:45 &ndash; 1:45</span> Major RE Sources (Solar/Wind)</li>
+                                <li><span class="chapter-time">1:45 &ndash; 2:45</span> Environmental &amp; Socio-Economic Impact</li>
+                                <li><span class="chapter-time">2:45 &ndash; 3:45</span> Key Challenges &amp; Grid Storage</li>
+                                <li><span class="chapter-time">3:45 &ndash; 4:30</span> Sustainable Future &amp; Opportunities</li>
+                                <li><span class="chapter-time">4:30 &ndash; 5:02</span> Conclusion &amp; Closing</li>
+                            </ul>
+                        </div>
+
+                        <div class="doc-actions-row">
+                            <button class="btn btn-amber" type="button" data-open-video>
+                                <i class="fas fa-play"></i> Watch Documentary
+                            </button>
+                            <a href="https://drive.google.com/drive/folders/1n4MEGUzt7OeqC9GoL7X_GUomdXCH9SVY" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+                                <i class="fab fa-google-drive"></i> Drive Documentary
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 12. PROJECT DEVELOPMENT (4-STEP TIMELINE) & 13. AI AS SUPPORTING TECH -->
+        <section class="section-alt" id="project">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-badge"><i class="fas fa-tasks"></i> Project Methodology</span>
+                    <h2 class="section-title">From Research to Digital Product</h2>
+                    <p class="section-subtitle">
+                        How the educational research was systematically structured, digitized, and published.
+                    </p>
+                </div>
+
+                <!-- 4-step timeline: horizontal on desktop, vertical on mobile -->
+                <div class="dev-timeline-track">
+                    <div class="dev-timeline-step">
+                        <div class="step-number">01</div>
+                        <h3 class="step-title">Research</h3>
+                        <p class="step-desc">
+                            Study reliable information and data about India's renewable-energy transition from official sources (MNRE, IEA, IRENA).
+                        </p>
+                    </div>
+
+                    <div class="dev-timeline-step">
+                        <div class="step-number">02</div>
+                        <h3 class="step-title">Content Development</h3>
+                        <p class="step-desc">
+                            Organise the research into educational and understandable content structured into challenges, opportunities, and policy data.
+                        </p>
+                    </div>
+
+                    <div class="dev-timeline-step">
+                        <div class="step-number">03</div>
+                        <h3 class="step-title">Digital Development</h3>
+                        <p class="step-desc">
+                            Create the website and documentary using modern digital tools and AI-supported workflows for seamless presentation.
+                        </p>
+                    </div>
+
+                    <div class="dev-timeline-step">
+                        <div class="step-number">04</div>
+                        <h3 class="step-title">Awareness</h3>
+                        <p class="step-desc">
+                            Promote the project through social-media content, promotional video reels, and interactive educational features.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 14. PROJECT GALLERY / ATTACHMENTS (EVIDENCE) -->
+        <section id="gallery">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-badge"><i class="fas fa-images"></i> Visual Evidence</span>
+                    <h2 class="section-title">Project Evidence</h2>
+                    <p class="section-subtitle">
+                        Visual evidence and production artifacts submitted for academic evaluation. Click any item to view in full resolution.
+                    </p>
+                </div>
+
+                <div class="evidence-gallery-grid">
+                    <!-- 1. Website Screenshot -->
+                    <div class="evidence-card" role="button" tabindex="0" aria-label="View Project Website in full resolution" data-lightbox-title="Project Website">
+                        <div class="evidence-img-box">
+                            <img loading="lazy" decoding="async" src="assets/attachments/website_screenshot.png" alt="Project Website" class="evidence-img">
+                            <div class="evidence-zoom-tag"><i class="fas fa-search-plus"></i></div>
+                        </div>
+                        <div class="evidence-info">
+                            <span class="evidence-num-tag">Figure 1</span>
+                            <h4 class="evidence-caption">Project Website</h4>
+                        </div>
+                    </div>
+
+                    <!-- 2. Main Information Section -->
+                    <div class="evidence-card" role="button" tabindex="0" aria-label="View Main Information Section in full resolution" data-lightbox-title="Main Information Section">
+                        <div class="evidence-img-box">
+                            <img loading="lazy" decoding="async" src="assets/attachments/main_info_section.png" alt="Main Information Section" class="evidence-img">
+                            <div class="evidence-zoom-tag"><i class="fas fa-search-plus"></i></div>
+                        </div>
+                        <div class="evidence-info">
+                            <span class="evidence-num-tag">Figure 2</span>
+                            <h4 class="evidence-caption">Main Information Section</h4>
+                        </div>
+                    </div>
+
+                    <!-- 3. Documentary Screenshot -->
+                    <div class="evidence-card" role="button" tabindex="0" aria-label="View Documentary in full resolution" data-lightbox-title="Documentary">
+                        <div class="evidence-img-box">
+                            <img loading="lazy" decoding="async" src="assets/attachments/doc_screenshot.png" alt="Documentary" class="evidence-img">
+                            <div class="evidence-zoom-tag"><i class="fas fa-search-plus"></i></div>
+                        </div>
+                        <div class="evidence-info">
+                            <span class="evidence-num-tag">Figure 3</span>
+                            <h4 class="evidence-caption">Documentary</h4>
+                        </div>
+                    </div>
+
+                    <!-- 4. Social-media promotional reel -->
+                    <div class="evidence-card" role="button" tabindex="0" aria-label="View Social Media Promotional Reel in full resolution" data-lightbox-title="Social Media Promotional Reel">
+                        <div class="evidence-img-box">
+                            <img loading="lazy" decoding="async" src="assets/attachments/promo_reel.png" alt="Social Media Promotional Reel" class="evidence-img">
+                            <div class="evidence-zoom-tag"><i class="fas fa-search-plus"></i></div>
+                        </div>
+                        <div class="evidence-info">
+                            <span class="evidence-num-tag">Figure 4</span>
+                            <h4 class="evidence-caption">Social Media Promotional Reel</h4>
+                        </div>
+                    </div>
+
+                    <!-- 5. Promotional Reel Cover -->
+                    <div class="evidence-card" role="button" tabindex="0" aria-label="View Promotional Reel Cover in full resolution" data-lightbox-title="Promotional Reel Cover">
+                        <div class="evidence-img-box">
+                            <img loading="lazy" decoding="async" src="assets/social-media/promotion_opening.jpg" alt="Promotional Reel Cover" class="evidence-img">
+                            <div class="evidence-zoom-tag"><i class="fas fa-search-plus"></i></div>
+                        </div>
+                        <div class="evidence-info">
+                            <span class="evidence-num-tag">Figure 5</span>
+                            <h4 class="evidence-caption">Promotional Reel Cover</h4>
+                        </div>
+                    </div>
+
+                    <!-- 6. QR Documentary -->
+                    <div class="evidence-card" role="button" tabindex="0" aria-label="View QR Documentary in full resolution" data-lightbox-title="QR Documentary">
+                        <div class="evidence-img-box evidence-img-box--qr">
+                            <img loading="lazy" decoding="async" src="assets/qr/qr_code.png" alt="QR Documentary" class="evidence-img evidence-img--contain">
+                            <div class="evidence-zoom-tag"><i class="fas fa-search-plus"></i></div>
+                        </div>
+                        <div class="evidence-info">
+                            <span class="evidence-num-tag">Figure 6</span>
+                            <h4 class="evidence-caption">QR Documentary</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 15. SOCIAL MEDIA COVERAGE -->
+        <section class="section-alt" id="social-media">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-badge"><i class="fas fa-share-alt"></i> Public Outreach</span>
+                    <h2 class="section-title">Social Media Coverage</h2>
+                    <p class="section-subtitle">
+                        Promoting renewable energy awareness beyond the classroom through engaging short form video.
+                    </p>
+                </div>
+
+                <div class="social-media-container">
+                    <!-- Local Promotional Reel Player -->
+                    <div class="reel-player-box">
+                        <video class="reel-video-element" controls poster="assets/social-media/promotion_opening.jpg" preload="metadata">
+                            <source src="assets/social-media/promo_reel.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+
+                        <!-- Reel Bottom Bar -->
+                        <div class="reel-footer-bar">
+                            <div>
+                                <strong class="reel-title">Promotional Awareness Reel</strong>
+                                <span class="reel-meta">Official Campaign Post: <strong>@aalokyadav447</strong></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Engagement figures (static, recorded manually) -->
+                    <div class="social-metrics-panel">
+                        <p class="social-intro-desc">
+                            Short promotional videos/reels were created to increase awareness about renewable energy and encourage viewers to explore the complete project.
+                        </p>
+
+                        <table class="metrics-table">
+                            <caption class="sr-only">Instagram reel engagement figures</caption>
+                            <tr>
+                                <td>Platform:</td>
+                                <td>
+                                    <a href="https://www.instagram.com/reel/DeOjARMiB4r/?utm_source=ig_web_copy_link" target="_blank" rel="noopener noreferrer" class="platform-link-tag">
+                                        <i class="fab fa-instagram"></i> Instagram
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Date of Posting:</td>
+                                <td><time class="metric-val-badge" datetime="2026-10-08">8 October 2026</time></td>
+                            </tr>
+                            <tr>
+                                <td>Views:</td>
+                                <td><span class="metric-val-badge metric-val-highlight">215</span></td>
+                            </tr>
+                            <tr>
+                                <td>Likes:</td>
+                                <td><span class="metric-val-badge metric-val-highlight">15</span></td>
+                            </tr>
+                            <tr>
+                                <td>Comments:</td>
+                                <td><span class="metric-val-badge metric-val-highlight">5</span></td>
+                            </tr>
+                            <tr>
+                                <td>Shares:</td>
+                                <td><span class="metric-val-badge metric-val-highlight">6</span></td>
+                            </tr>
+                        </table>
+
+                        <p class="social-notice">
+                            Figures were recorded manually from the Instagram post and may have changed since. Open the reel on Instagram for the current numbers.
+                        </p>
+
+                        <!-- Single Action Button to Open/View Instagram -->
+                        <div class="reel-cta">
+                            <a href="https://www.instagram.com/reel/DeOjARMiB4r/?utm_source=ig_web_copy_link" target="_blank" rel="noopener noreferrer" class="btn btn-amber">
+                                <i class="fab fa-instagram"></i> View Reel on Instagram
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- CA1 HANDWRITTEN REPORT DIGITAL VIEWER (Academic Evidence Archive) -->
+        <section class="section-alt" id="report">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-badge"><i class="fas fa-file-alt"></i> Submission Archive</span>
+                    <h2 class="section-title">Report Archive</h2>
+                    <p class="section-subtitle">
+                        A page-by-page preview of the CA1 report, alongside the downloadable DOCX version.
+                    </p>
+                </div>
+
+                <div class="report-card">
+                    <div class="report-bar">
+                        <div class="report-nav">
+                            <button class="btn btn-outline btn-sm" id="report-prev-btn" type="button" aria-label="Previous report page"><i class="fas fa-chevron-left"></i> Prev</button>
+                            <span class="report-page-num" id="report-page-num" aria-live="polite">Page 1 of 7</span>
+                            <button class="btn btn-outline btn-sm" id="report-next-btn" type="button" aria-label="Next report page">Next <i class="fas fa-chevron-right"></i></button>
+                        </div>
+
+                        <div>
+                            <label for="report-page-select" class="sr-only">Select Report Page</label>
+                            <select class="report-select" id="report-page-select">
+                                <option value="1">Page 1: Introduction</option>
+                                <option value="2">Page 2: Review of Literature</option>
+                                <option value="3">Page 3: Description of Product &amp; Attachments</option>
+                                <option value="4">Page 4: Significance of Product / Documentary</option>
+                                <option value="5">Page 5: Social Media Coverage</option>
+                                <option value="6">Page 6: Conclusion</option>
+                                <option value="7">Page 7: Bibliography &amp; References</option>
+                            </select>
+                        </div>
+
+                        <a href="Renewable Energy Transition in India CA1 Report (Revised).docx" download class="btn btn-primary btn-sm">
+                            <i class="fas fa-download"></i> Download Report (DOCX)
+                        </a>
+                    </div>
+
+                    <div class="report-view">
+                        <img loading="lazy" decoding="async" id="report-page-img" src="assets/report/page_1.svg" alt="Report Page 1" class="report-img">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 17. CONCLUSION -->
+        <section id="conclusion">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-badge"><i class="fas fa-flag-checkered"></i> Synthesis</span>
+                    <h2 class="section-title">Conclusion</h2>
+                </div>
+
+                <div class="conclusion-box">
+                    <p class="conclusion-text">
+                        India's renewable energy transition is both a challenge and an opportunity. Solar and wind capacity are expanding rapidly, but successful integration requires energy storage, stronger transmission infrastructure, investment, technological innovation and responsible environmental planning.
+                    </p>
+
+                    <p class="conclusion-closing-statement">
+                        “A cleaner energy future requires technology, investment, awareness and collective action.”
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 18. REFERENCES -->
+        <section class="section-alt" id="references">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-badge"><i class="fas fa-book"></i> Academic Citations</span>
+                    <h2 class="section-title">References</h2>
+                    <p class="section-subtitle">
+                        Official institutional sources and reports cited throughout the research.
+                    </p>
+                </div>
+
+                <div class="references-list">
+                    <div class="reference-item">
+                        <i class="fas fa-university"></i>
+                        <div>
+                            <strong>Ministry of New and Renewable Energy (MNRE), Government of India</strong> (2026) <em>Physical Achievements: Renewable Energy Capacity</em>. New Delhi: MNRE.
+                        </div>
+                    </div>
+
+                    <div class="reference-item">
+                        <i class="fas fa-globe-americas"></i>
+                        <div>
+                            <strong>International Energy Agency (IEA)</strong> (2025) <em>World Energy Investment 2025: India &amp; Clean Energy Capital Inflows</em>. Paris: IEA.
+                        </div>
+                    </div>
+
+                    <div class="reference-item">
+                        <i class="fas fa-atom"></i>
+                        <div>
+                            <strong>International Renewable Energy Agency (IRENA)</strong> (2026) <em>Renewable Capacity Statistics 2026</em>. Abu Dhabi: IRENA.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- 19. FOOTER -->
+    <footer class="site-footer">
+        <div class="container">
+            <h3 class="footer-title">Renewable Energy Transition in India</h3>
+            <p class="footer-subtitle">Challenges and Opportunities for Sustainable Development</p>
+            <p class="footer-academic-tag">Academic Project &bull; Department of Environmental Studies</p>
+
+            <p class="footer-creator">
+                <span class="footer-creator-badge">
+                    <i class="fas fa-user-graduate"></i> Creator: <strong>Alok Kumar Yadav</strong>
+                </span>
+            </p>
+
+            <ul class="footer-nav-links">
+                <li><a href="#home">Project Website</a></li>
+                <li><a href="#documentary">Documentary</a></li>
+                <li><a href="#social-media">Social Media</a></li>
+                <li><a href="#references">References</a></li>
+            </ul>
+
+            <div class="footer-university-brand">
+                <img loading="lazy" decoding="async" src="assets/images/lpu_logo.png" alt="Lovely Professional University Logo">
+                <span>Lovely Professional University (LPU)</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- MODAL 1: Image Lightbox Modal -->
+    <div class="modal-overlay" id="lightbox-modal" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="lightbox-title">
+        <div class="modal-body">
+            <button class="modal-close" type="button" aria-label="Close image lightbox" data-close-modal>&times;</button>
+            <img class="lightbox-img" id="lightbox-img" alt="">
+            <h3 class="lightbox-title" id="lightbox-title"></h3>
+            <p class="lightbox-desc" id="lightbox-desc" hidden></p>
+        </div>
+    </div>
+
+    <!-- MODAL 2: Documentary Video Player Modal -->
+    <div class="modal-overlay" id="video-modal" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="video-modal-title">
+        <div class="modal-body modal-body--wide">
+            <button class="modal-close" type="button" aria-label="Close documentary video" data-close-modal>&times;</button>
+            <div class="doc-video-player-container">
+                <iframe id="doc-modal-video-frame" 
+                        data-src="https://drive.google.com/file/d/1Qh5Iw7qBgorL5JUiw2iehr4Gr6u-Lpv2/preview?autoplay=1" 
+                        title="Renewable Energy Transition in India Documentary" 
+                        allow="autoplay; fullscreen; encrypted-media; picture-in-picture">
+                </iframe>
+            </div>
+            <div class="video-meta-row">
+                <div>
+                    <h4 class="video-title" id="video-modal-title">Renewable Energy Transition in India</h4>
+                    <div class="video-meta-line">
+                        <span class="video-duration"><i class="far fa-clock"></i> Duration: 5:02 mins</span>
+                        <span class="video-sep">&bull;</span>
+                        <span class="video-chapter-info" id="video-modal-chapter-info"><i class="fas fa-video"></i> Academic Research Documentary</span>
+                    </div>
+                </div>
+                <div class="video-actions">
+                    <a href="https://drive.google.com/drive/folders/1n4MEGUzt7OeqC9GoL7X_GUomdXCH9SVY" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
+                        <i class="fab fa-google-drive"></i> Drive Documentary
+                    </a>
+                </div>
+            </div>
+            <p class="video-desc">
+                An original research based educational video documentary exploring India's renewable-energy transition, its challenges and opportunities for sustainable development.
+            </p>
+        </div>
+    </div>
+
+    <!-- Script File -->
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1100" width="100%" height="100%">
+  <defs>
+    <filter id="paperTexture" x="0%" y="0%" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.04" numOctaves="3" result="noise"/>
+      <feDiffuseLighting in="noise" lighting-color="#fffdfa" surfaceScale="2">
+        <feDistantLight azimuth="45" elevation="60"/>
+      </feDiffuseLighting>
+      <feBlend mode="multiply" in="SourceGraphic" result="blend"/>
+    </filter>
+  </defs>
+
+  <!-- Paper background -->
+  <rect width="800" height="1100" fill="#fcfaf2"/>
+  
+  <!-- Notebook Lines -->
+  <!-- Red margin line -->
+  <line x1="70" y1="0" x2="70" y2="1100" stroke="#f87171" stroke-width="2"/>
+  <line x1="74" y1="0" x2="74" y2="1100" stroke="#f87171" stroke-width="1" opacity="0.6"/>
+
+  <!-- Horizontal blue ruling lines -->
+  <g stroke="#93c5fd" stroke-width="1.2" opacity="0.6">
+    <line x1="0" y1="150" x2="800" y2="150"/>
+    <line x1="0" y1="192" x2="800" y2="192"/>
+    <line x1="0" y1="234" x2="800" y2="234"/>
+    <line x1="0" y1="276" x2="800" y2="276"/>
+    <line x1="0" y1="318" x2="800" y2="318"/>
+    <line x1="0" y1="360" x2="800" y2="360"/>
+    <line x1="0" y1="402" x2="800" y2="402"/>
+    <line x1="0" y1="444" x2="800" y2="444"/>
+    <line x1="0" y1="486" x2="800" y2="486"/>
+    <line x1="0" y1="528" x2="800" y2="528"/>
+    <line x1="0" y1="570" x2="800" y2="570"/>
+    <line x1="0" y1="612" x2="800" y2="612"/>
+    <line x1="0" y1="654" x2="800" y2="654"/>
+    <line x1="0" y1="696" x2="800" y2="696"/>
+    <line x1="0" y1="738" x2="800" y2="738"/>
+    <line x1="0" y1="780" x2="800" y2="780"/>
+    <line x1="0" y1="822" x2="800" y2="822"/>
+    <line x1="0" y1="864" x2="800" y2="864"/>
+    <line x1="0" y1="906" x2="800" y2="906"/>
+    <line x1="0" y1="948" x2="800" y2="948"/>
+    <line x1="0" y1="990" x2="800" y2="990"/>
+    <line x1="0" y1="1032" x2="800" y2="1032"/>
+  </g>
+
+  <!-- Page Header -->
+  <rect x="520" y="40" width="220" height="60" rx="8" fill="none" stroke="#2d6a4f" stroke-width="1.5"/>
+  <text x="540" y="65" font-family="'Segoe UI', sans-serif" font-size="14" font-weight="600" fill="#2d6a4f">Date: 2026-08-31</text>
+  <text x="540" y="85" font-family="'Segoe UI', sans-serif" font-size="14" font-weight="600" fill="#2d6a4f">Page No: 05</text>
+
+  <!-- Document Title / Header -->
+  <text x="90" y="100" font-family="'Segoe UI', sans-serif" font-weight="700" font-size="16" fill="#0f4c3a">LOVELY PROFESSIONAL UNIVERSITY • EVS CA1 REPORT</text>
+  
+  <!-- Handwritten Title -->
+  <text x="90" y="190" font-family="'Caveat', 'Segoe Script', cursive" font-weight="700" font-size="34" fill="#0f172a">Section 5: 5. Status of Social Media Coverage</text>
+  <text x="90" y="230" font-family="'Caveat', 'Segoe Script', cursive" font-weight="600" font-size="22" fill="#334155">Public Outreach, Engagement & Measurement Evidence</text>
+  
+  <line x1="90" y1="245" x2="730" y2="245" stroke="#0f4c3a" stroke-width="2" stroke-dasharray="6,4"/>
+
+  <!-- Handwritten Lines -->
+  <text x="90" y="300" font-family="'Caveat', 'Segoe Script', 'Comic Sans MS', cursive" font-size="24" fill="#1b2a4a">The educational documentary was published across YouTube, Instagram, and Facebook.</text>
+    <text x="90" y="345" font-family="'Caveat', 'Segoe Script', 'Comic Sans MS', cursive" font-size="24" fill="#1b2a4a">Social media outreach aims to engage youth, university peers, and environmental groups.</text>
+    <text x="90" y="390" font-family="'Caveat', 'Segoe Script', 'Comic Sans MS', cursive" font-size="24" fill="#1b2a4a">YouTube stats tracking: Views, watch time, likes, subscriber feedback, and comments.</text>
+    <text x="90" y="435" font-family="'Caveat', 'Segoe Script', 'Comic Sans MS', cursive" font-size="24" fill="#1b2a4a">Instagram Shorts & Reels created for viral awareness highlighting the 500 GW 2030 target.</text>
+    <text x="90" y="480" font-family="'Caveat', 'Segoe Script', 'Comic Sans MS', cursive" font-size="24" fill="#1b2a4a">Facebook educational posts shared across academic and environmental student communities.</text>
+    <text x="90" y="525" font-family="'Caveat', 'Segoe Script', 'Comic Sans MS', cursive" font-size="24" fill="#1b2a4a">All analytics are recorded accurately without artificial inflation or fabrication.</text>
+    <text x="90" y="570" font-family="'Caveat', 'Segoe Script', 'Comic Sans MS', cursive" font-size="24" fill="#1b2a4a">Screenshots of actual channel performance are attached in Section 13 of the showcase.</text>
+    <text x="90" y="615" font-family="'Caveat', 'Segoe Script', 'Comic Sans MS', cursive" font-size="24" fill="#1b2a4a">Ongoing public feedback indicates strong interest in renewable energy career pathways.</text>
+
+  <!-- Footer Watermark -->
+  <rect x="90" y="1020" width="620" height="40" rx="5" fill="#e2e8f0" opacity="0.8"/>
+  <text x="400" y="1045" font-family="'Segoe UI', sans-serif" font-size="13" font-weight="600" fill="#475569" text-anchor="middle">Scanned CA1 Handwritten Submission • Environmental Studies • LPU</text>
+</svg>
