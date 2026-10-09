@@ -634,28 +634,6 @@ section:nth-child(even) {
   color: var(--text-subtle);
   line-height: 1.5;
 }
-.stat-source-link {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 6px;
-  margin-top: 14px;
-  font-size: 0.78rem;
-  font-weight: 700;
-  color: var(--primary);
-  text-decoration: none;
-  border-top: 1px dashed var(--border);
-  padding-top: 10px;
-  width: 100%;
-  transition: all 0.2s ease;
-}
-.stat-source-link:hover {
-  color: var(--accent);
-  text-decoration: underline;
-}
-[data-theme="dark"] .stat-source-link {
-  color: #34d399;
-}
 .data-reference-pill {
   display: inline-flex;
   align-items: center;
@@ -738,78 +716,6 @@ section:nth-child(even) {
   border-radius: 6px;
   font-size: 0.8rem;
   font-weight: 700;
-}
-.re-card-tech {
-  font-size: 0.9rem;
-  color: var(--text-main);
-  line-height: 1.55;
-  margin-bottom: 14px;
-}
-.re-card-subblock {
-  margin-bottom: 12px;
-}
-.re-subblock-title {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  font-size: 0.76rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  color: var(--text-main);
-  margin-bottom: 4px;
-}
-.re-subblock-title--limit {
-  color: var(--amber-dark);
-}
-[data-theme="dark"] .re-subblock-title--limit {
-  color: #fbbf24;
-}
-.re-points-list {
-  list-style: none;
-  padding-left: 0;
-  margin: 0;
-}
-.re-points-list li {
-  position: relative;
-  padding-left: 14px;
-  margin-bottom: 3px;
-  color: var(--text-muted);
-  font-size: 0.84rem;
-  line-height: 1.45;
-}
-.re-points-list li::before {
-  content: "•";
-  position: absolute;
-  left: 2px;
-  color: var(--primary);
-  font-weight: bold;
-}
-[data-theme="dark"] .re-points-list li::before {
-  color: var(--accent);
-}
-.re-subblock-text {
-  font-size: 0.84rem;
-  color: var(--text-muted);
-  line-height: 1.45;
-  margin: 0;
-}
-.re-source-link {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  font-size: 0.8rem;
-  font-weight: 700;
-  color: var(--primary);
-  text-decoration: none;
-  transition: all 0.2s ease;
-}
-.re-source-link:hover {
-  color: var(--accent);
-  text-decoration: underline;
-}
-[data-theme="dark"] .re-source-link {
-  color: #34d399;
 }
 
 /* ==========================================================================
@@ -1373,53 +1279,11 @@ section:nth-child(even) {
   text-align: center;
   box-shadow: var(--shadow-sm);
 }
-.conclusion-title {
-  font-family: var(--font-heading);
-  font-size: 1.45rem;
-  font-weight: 800;
-  color: var(--text-main);
-  margin-bottom: 14px;
-}
 .conclusion-text {
-  font-size: 1.08rem;
+  font-size: 1.15rem;
   color: var(--text-main);
-  line-height: 1.75;
-  margin-bottom: 22px;
-}
-.conclusion-key-pillars {
-  list-style: none;
-  padding-left: 0;
-  margin: 0 auto 26px auto;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 12px;
-  text-align: left;
-}
-.conclusion-key-pillars li {
-  background: var(--bg-alt);
-  border: 1px solid var(--border);
-  border-radius: var(--radius-sm);
-  padding: 12px 16px;
-  font-size: 0.88rem;
-  color: var(--text-muted);
-  line-height: 1.5;
-  position: relative;
-  padding-left: 30px;
-}
-.conclusion-key-pillars li strong {
-  color: var(--text-main);
-}
-.conclusion-key-pillars li::before {
-  content: '✓';
-  position: absolute;
-  left: 12px;
-  top: 12px;
-  color: var(--primary);
-  font-weight: 800;
-  font-size: 0.95rem;
-}
-[data-theme="dark"] .conclusion-key-pillars li::before {
-  color: var(--accent);
+  line-height: 1.8;
+  margin-bottom: 28px;
 }
 .conclusion-closing-statement {
   font-family: var(--font-heading);
@@ -1562,58 +1426,6 @@ section:nth-child(even) {
 
 .ref-btn-card:hover .ref-btn-action i {
   transform: translateX(3px);
-}
-
-.harvard-bibliography-card {
-  background: var(--bg-card);
-  border: 1px solid var(--border);
-  border-radius: var(--radius-md);
-  padding: 30px;
-  max-width: 1040px;
-  margin: 36px auto 0 auto;
-  box-shadow: var(--shadow-sm);
-}
-
-.harvard-bib-header {
-  margin-bottom: 20px;
-  padding-bottom: 14px;
-  border-bottom: 1px solid var(--border);
-}
-
-.harvard-bib-title {
-  font-size: 1.25rem;
-  font-weight: 700;
-  color: var(--text-main);
-  margin-bottom: 6px;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.harvard-bib-subtitle {
-  font-size: 0.86rem;
-  color: var(--text-muted);
-}
-
-.harvard-bib-list {
-  padding-left: 20px;
-  margin: 0;
-}
-
-.harvard-bib-item {
-  font-size: 0.92rem;
-  line-height: 1.65;
-  color: var(--text-main);
-  margin-bottom: 14px;
-}
-
-.harvard-bib-item a {
-  color: var(--primary);
-  word-break: break-all;
-}
-
-[data-theme="dark"] .harvard-bib-item a {
-  color: #34d399;
 }
 
 /* ==========================================================================

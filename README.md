@@ -71,12 +71,17 @@ The figures on the website come from these official publications. Sourced from o
 | ⚡ **Total renewable energy** | **299.25 GW** | **100.0%** | [MNRE, Govt. of India](https://mnre.gov.in/en/) |
 | 📈 **Clean Power Investment (2024)** | **83%** | — | [IEA World Energy Investment 2025: India](https://www.iea.org/reports/world-energy-investment-2025/india) |
 
-#### 🔗 Academic Bibliography (Harvard Referencing)
-1. **Ministry of New and Renewable Energy (MNRE), Govt. of India (2026)** *Physical Achievements & Programme Overview: Installed Renewable Energy Capacity (as of 30 September 2026)*. New Delhi: Ministry of New and Renewable Energy. Available at: [https://mnre.gov.in/en/](https://mnre.gov.in/en/) [Accessed: 30 September 2026].
-2. **Central Electricity Authority (CEA), Ministry of Power (2026)** *Monthly Generation Report & Executive Summary of Power Sector in India*. New Delhi: Central Electricity Authority. Available at: [https://cea.nic.in/](https://cea.nic.in/) [Accessed: 30 September 2026].
-3. **International Energy Agency (IEA) (2025)** *World Energy Investment 2025: India Country Profile & Clean Energy Capital Inflows*. Paris: International Energy Agency. Available at: [https://www.iea.org/reports/world-energy-investment-2025/india](https://www.iea.org/reports/world-energy-investment-2025/india) [Accessed: 1 October 2026].
-4. **International Renewable Energy Agency (IRENA) (2026)** *Renewable Capacity Statistics 2026*. Abu Dhabi: International Renewable Energy Agency. Available at: [https://www.irena.org/Publications/2026/Mar/Renewable-capacity-statistics-2026](https://www.irena.org/Publications/2026/Mar/Renewable-capacity-statistics-2026) [Accessed: 1 October 2026].
-5. **International Energy Agency (IEA) (2024)** *India Case Study: Clean Energy Transition & Cost of Capital Observatory*. Paris: International Energy Agency. Available at: [https://www.iea.org/reports/india-case-study](https://www.iea.org/reports/india-case-study) [Accessed: 1 October 2026].
+#### 🔗 Official Academic & Policy References
+1. **Ministry of New and Renewable Energy (MNRE), Govt. of India (2026)** — *Physical Achievements & Programme Overview: Renewable Energy Capacity*  
+   URL: [https://mnre.gov.in/en/](https://mnre.gov.in/en/)
+2. **Central Electricity Authority (CEA), Ministry of Power (2026)** — *Monthly Generation Report & Executive Power Summary*  
+   URL: [https://cea.nic.in/](https://cea.nic.in/)
+3. **International Energy Agency (IEA) (2025)** — *World Energy Investment 2025: India & Clean Energy Capital Inflows*  
+   URL: [https://www.iea.org/reports/world-energy-investment-2025/india](https://www.iea.org/reports/world-energy-investment-2025/india)
+4. **International Renewable Energy Agency (IRENA) (2026)** — *Renewable Capacity Statistics 2026*  
+   URL: [https://www.irena.org/Publications/2026/Mar/Renewable-capacity-statistics-2026](https://www.irena.org/Publications/2026/Mar/Renewable-capacity-statistics-2026)
+5. **International Energy Agency (IEA) (2024)** — *India Case Study: Clean Energy Transition & Cost of Capital Observatory*  
+   URL: [https://www.iea.org/reports/india-case-study](https://www.iea.org/reports/india-case-study)
 
 ---
 
@@ -107,7 +112,7 @@ The figures on the website come from these official publications. Sourced from o
 
 10. **Project Development & AI Supporting Technology:** 4-step timeline: Research → Content Development → Digital Development → Awareness.
 
-11. **Project Evidence Gallery:** six figures with a fullscreen lightbox (including Figure 6: Live Project Website QR Code).
+11. **Project Evidence Gallery:** six figures with a fullscreen lightbox.
 
 12. **Social Media Coverage:**
     * HTML5 player for `assets/social-media/promo_reel.mp4`.
