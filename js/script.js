@@ -165,7 +165,8 @@
             });
         };
 
-        const observer = new IntersectionObserver((entries, obs) => {
+        let observer = null;
+        observer = new IntersectionObserver((entries, obs) => {
             if (entries.some(entry => entry.isIntersecting)) {
                 triggerAnimation();
                 obs.disconnect();
@@ -176,7 +177,12 @@
         // Safety fallback: if user jumps past glance section via anchor or after 4s
         setTimeout(() => {
             if (!animated) {
+                // Treat the fallback as completion too. Otherwise, a user who
+                // reaches this section after the timeout sees the counters jump
+                // back to zero and animate a second time.
+                animated = true;
                 items.forEach(item => render(item, item.target));
+                observer.disconnect();
             }
         }, 4000);
     }
