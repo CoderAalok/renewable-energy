@@ -1500,14 +1500,16 @@ section:nth-child(even) {
 .footer-creator-badge {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   gap: 8px;
-  padding: 6px 18px;
+  padding: 8px 22px;
   background: rgba(245, 158, 11, 0.12);
   border: 1px solid rgba(245, 158, 11, 0.35);
   border-radius: 30px;
   color: #fef3c7;
-  font-size: 0.92rem;
+  font-size: 0.95rem;
   font-weight: 500;
+  letter-spacing: 0.2px;
 }
 .footer-creator-badge strong {
   color: #fbbf24;
