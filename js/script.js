@@ -17,36 +17,24 @@
     };
 
     /* ----------------------------------------------------------------------
-       1. NAVIGATION: scroll progress, active link, mobile menu
+       1. NAVIGATION: active link, mobile menu
        ---------------------------------------------------------------------- */
-    function initScrollProgress() {
-        const bar = $('#progress-bar');
-        if (!bar) return;
-        let ticking = false;
-
-        const update = () => {
-            const root = document.documentElement;
-            const max = root.scrollHeight - root.clientHeight;
-            bar.style.width = (max > 0 ? (root.scrollTop / max) * 100 : 0) + '%';
-            ticking = false;
-        };
-
-        window.addEventListener('scroll', () => {
-            if (!ticking) {
-                ticking = true;
-                requestAnimationFrame(update);
-            }
-        }, { passive: true });
-        update();
-    }
-
     function initActiveNavLink() {
         const links = $$('.nav-links a[href^="#"]');
         const sections = $$('section[id]');
         if (!links.length || !sections.length || !('IntersectionObserver' in window)) return;
 
+        const navIds = new Set(links.map(link => link.getAttribute('href').slice(1)));
+        const sectionToNavId = {};
+        let lastNavId = 'home';
+        sections.forEach(section => {
+            if (navIds.has(section.id)) lastNavId = section.id;
+            sectionToNavId[section.id] = lastNavId;
+        });
+
         const setActive = (id) => {
-            links.forEach(link => link.classList.toggle('active', link.getAttribute('href') === `#${id}`));
+            const targetId = sectionToNavId[id] || id;
+            links.forEach(link => link.classList.toggle('active', link.getAttribute('href') === `#${targetId}`));
         };
 
         // Active section = the one crossing a band just below the sticky header.
@@ -363,14 +351,12 @@
             }
         };
 
-        const accessibleContent = $('#report-accessible-content');
-
         const show = (page) => {
             current = Math.min(Math.max(page, 1), total);
             const pageTitle = select.options[current - 1] ? select.options[current - 1].textContent : `Page ${current}`;
 
             image.onerror = () => {
-                image.alt = `Failed to load preview for ${pageTitle}. Please use the "Download Report (DOCX)" button above to view the complete document.`;
+                image.alt = `Failed to load preview for ${pageTitle}. Please use the "Download Report (DOCX)" button below to view the complete document.`;
             };
             image.onload = () => {
                 image.alt = `CA1 Report: ${pageTitle}`;
@@ -382,10 +368,6 @@
             prev.disabled = current === 1;
             next.disabled = current === total;
 
-            if (accessibleContent) {
-                accessibleContent.innerHTML = `<h4>${pageTitle}</h4><p>The scanned report page shown above is page ${current} of ${total}.</p>`;
-            }
-
             // Preload adjacent pages for seamless navigation
             preload(current + 1);
             preload(current - 1);
@@ -394,12 +376,49 @@
         prev.addEventListener('click', () => show(current - 1));
         next.addEventListener('click', () => show(current + 1));
         select.addEventListener('change', () => show(parseInt(select.value, 10)));
+
+        const card = $('#report-card');
+        const view = $('#report-view');
+        const zoomBadge = $('#report-zoom-badge');
+        if (card && view) {
+            const setZoom = (zoomed) => {
+                card.classList.toggle('is-zoomed', zoomed);
+                view.setAttribute('aria-expanded', String(zoomed));
+                view.setAttribute('aria-label', zoomed ? 'Click to zoom out of report page' : 'Click to zoom in on report page');
+                if (zoomBadge) {
+                    zoomBadge.innerHTML = zoomed
+                        ? '<i class="fas fa-times"></i> Click to shrink'
+                        : '<i class="fas fa-search-plus"></i> Click to zoom';
+                }
+            };
+
+            view.addEventListener('click', () => {
+                setZoom(!card.classList.contains('is-zoomed'));
+            });
+
+            card.addEventListener('keydown', (e) => {
+                if (e.target === select) return;
+                if (e.key === 'ArrowLeft' && current > 1) {
+                    e.preventDefault();
+                    show(current - 1);
+                } else if (e.key === 'ArrowRight' && current < total) {
+                    e.preventDefault();
+                    show(current + 1);
+                }
+            });
+
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape' && card.classList.contains('is-zoomed') && !activeModal) {
+                    setZoom(false);
+                }
+            });
+        }
+
         show(current);
     }
 
     /* ---------------------------------------------------------------------- */
     function init() {
-        initScrollProgress();
         initActiveNavLink();
         initMobileMenu();
         initThemeToggle();

@@ -118,18 +118,6 @@ body {
   outline-offset: 2px;
 }
 
-/* Global Progress Bar */
-#progress-bar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 4px;
-  background: linear-gradient(to right, var(--primary), var(--accent), var(--amber));
-  width: 0%;
-  z-index: 9999;
-  transition: width 0.1s ease;
-}
-
 .container {
   width: 90%;
   max-width: 1200px;
@@ -369,7 +357,8 @@ section:nth-child(even) {
 
 .challenge-card[role="button"]:focus-visible,
 .evidence-card[role="button"]:focus-visible,
-.doc-preview-container[role="button"]:focus-visible {
+.doc-preview-container[role="button"]:focus-visible,
+.report-view[role="button"]:focus-visible {
   outline: 3px solid var(--amber);
   outline-offset: 4px;
 }
@@ -495,28 +484,6 @@ section:nth-child(even) {
     transform: translateY(0);
   }
 }
-.scroll-indicator {
-  display: inline-flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 6px;
-  color: #94a3b8;
-  font-size: 0.8rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  text-decoration: none;
-  transition: color 0.2s ease;
-}
-.scroll-indicator:hover { color: #ffffff; }
-.scroll-indicator i {
-  animation: bounceDown 1.8s infinite;
-}
-@keyframes bounceDown {
-  0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
-  40% { transform: translateY(6px); }
-  60% { transform: translateY(3px); }
-}
 
 /* ==========================================================================
    PROJECT INTRODUCTION ("WHY RENEWABLE ENERGY MATTERS")
@@ -540,35 +507,6 @@ section:nth-child(even) {
 }
 [data-theme="dark"] .intro-lead-text strong {
   color: var(--accent);
-}
-.sources-overview-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 20px;
-}
-.source-overview-card {
-  background: var(--bg-card);
-  border: 1px solid var(--border);
-  border-radius: var(--radius-md);
-  padding: 24px;
-  transition: all 0.25s ease;
-  display: flex;
-  flex-direction: column;
-}
-.source-overview-card:hover {
-  transform: translateY(-4px);
-  border-color: var(--accent);
-  box-shadow: var(--shadow-md);
-}
-.source-icon {
-  width: 52px;
-  height: 52px;
-  border-radius: var(--radius-sm);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.6rem;
-  margin-bottom: 16px;
 }
 .icon-solar { background: #fef3c7; color: #d97706; }
 .icon-wind { background: #e0f2fe; color: #0284c7; }
@@ -635,16 +573,6 @@ section:nth-child(even) {
   line-height: 1.5;
 }
 
-.stat-source {
-  margin: 10px 0 0;
-  font-size: 0.78rem;
-  line-height: 1.45;
-  color: var(--text-muted);
-}
-.stat-source a {
-  color: var(--primary);
-  font-weight: 700;
-}
 .intro-definition {
   margin-top: 14px;
 }
@@ -655,29 +583,6 @@ section:nth-child(even) {
   font-size: 0.84rem;
   line-height: 1.5;
   color: var(--text-subtle);
-}
-.data-reference-pill {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  padding: 8px 20px;
-  background: var(--bg-card);
-  border: 1px solid var(--border);
-  border-radius: 30px;
-  font-size: 0.85rem;
-  font-weight: 700;
-  color: var(--text-muted);
-  box-shadow: var(--shadow-sm);
-  text-decoration: none;
-  transition: all 0.2s ease;
-}
-.data-reference-pill:hover {
-  border-color: var(--accent);
-  color: var(--primary);
-  transform: translateY(-1px);
-}
-[data-theme="dark"] .data-reference-pill:hover {
-  color: var(--accent);
 }
 
 /* ==========================================================================
@@ -1457,37 +1362,75 @@ section:nth-child(even) {
   background: var(--bg-card);
   border: 1px solid var(--border);
   border-radius: var(--radius-lg);
-  max-width: 1100px;
+  max-width: 680px;
   margin: 0 auto;
   overflow: hidden;
   box-shadow: var(--shadow-md);
+  transition: max-width 0.3s ease;
+}
+.report-card.is-zoomed {
+  max-width: 1000px;
 }
 .report-bar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 16px 24px;
+  padding: 14px 20px;
   background: var(--bg-alt);
-  border-bottom: 1px solid var(--border);
+  border-top: 1px solid var(--border);
   flex-wrap: wrap;
   gap: 12px;
 }
 .report-view {
-  padding: clamp(12px, 3vw, 30px);
+  position: relative;
+  padding: 18px;
   background: #cbd5e1;
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: zoom-in;
+}
+.report-card.is-zoomed .report-view {
+  padding: clamp(12px, 3vw, 28px);
+  cursor: zoom-out;
 }
 .report-img {
   display: block;
-  max-width: 900px;
-  width: 100%;
+  max-height: 380px;
+  width: auto;
+  max-width: 100%;
   height: auto;
+  object-fit: contain;
   border-radius: 8px;
   background: #ffffff;
   box-shadow: var(--shadow-md);
-  transition: transform 0.2s ease;
+  transition: max-height 0.3s ease, max-width 0.3s ease, transform 0.2s ease;
+}
+.report-card.is-zoomed .report-img {
+  max-height: none;
+  width: 100%;
+  max-width: 880px;
+}
+.report-zoom-badge {
+  position: absolute;
+  bottom: 14px;
+  right: 14px;
+  background: rgba(15, 23, 42, 0.78);
+  color: #ffffff;
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  pointer-events: none;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+.report-view:hover .report-zoom-badge {
+  background: var(--primary);
+  transform: translateY(-1px);
 }
 
 @media (max-width: 600px) {
@@ -1565,29 +1508,6 @@ section:nth-child(even) {
 }
 .footer-nav-links a:hover {
   color: #ffffff;
-}
-.footer-university-brand {
-  display: inline-flex;
-  align-items: center;
-  gap: 12px;
-  padding: 8px 20px;
-  background: rgba(255, 255, 255, 0.08);
-  border: 1px solid rgba(255, 255, 255, 0.14);
-  border-radius: 30px;
-  color: #e2e8f0;
-  font-size: 0.88rem;
-  font-weight: 600;
-}
-.footer-university-brand i {
-  color: var(--accent);
-  font-size: 1rem;
-}
-.footer-university-brand img {
-  height: 28px;
-  width: 28px;
-  border-radius: 50%;
-  background: #ffffff;
-  padding: 1px;
 }
 
 /* ==========================================================================
@@ -1784,7 +1704,6 @@ body.modal-open {
 
 /* Layout helpers */
 section.section-alt { background: var(--bg-alt); }
-.data-reference-wrap { text-align: center; }
 
 /* Navigation highlight for the documentary link */
 .nav-links a.nav-link-highlight,
@@ -1792,10 +1711,6 @@ section.section-alt { background: var(--bg-alt); }
 .nav-links a.nav-link-highlight.active,
 [data-theme="dark"] .nav-links a.nav-link-highlight:hover,
 [data-theme="dark"] .nav-links a.nav-link-highlight.active { color: var(--amber); }
-
-/* Intro source cards */
-.source-card-title { font-size: 1.15rem; font-weight: 800; margin-bottom: 6px; }
-.source-card-text { font-size: 0.9rem; color: var(--text-muted); line-height: 1.55; }
 
 /* Coloured icons and pills */
 .icon-accent { color: var(--accent); }
@@ -1890,6 +1805,8 @@ section.section-alt { background: var(--bg-alt); }
   padding: 6px 12px;
   border-radius: 6px;
   border: 1px solid var(--border);
+  background: var(--bg-card);
+  color: var(--text-main);
   font-size: 0.88rem;
   font-family: inherit;
 }
@@ -2343,60 +2260,9 @@ section.section-alt { background: var(--bg-alt); }
 }
 
 /* ==========================================================================
-   REPORT ACCESSIBLE TEXT TRANSCRIPT
-   ========================================================================== */
-.report-accessible-wrap {
-  margin-top: 20px;
-}
-
-.report-accessible-details {
-  background: var(--bg-card);
-  border: 1px solid var(--border);
-  border-radius: var(--radius-md);
-  padding: 14px 18px;
-}
-
-.report-accessible-summary {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  cursor: pointer;
-  font-size: 0.95rem;
-  color: var(--text-main);
-  user-select: none;
-  list-style: none;
-}
-
-.report-accessible-summary::-webkit-details-marker {
-  display: none;
-}
-
-.report-accessible-body {
-  margin-top: 14px;
-  padding-top: 12px;
-  border-top: 1px solid var(--border);
-  font-size: 0.9rem;
-  color: var(--text-muted);
-  line-height: 1.65;
-}
-
-.report-accessible-body h4 {
-  font-size: 1rem;
-  font-weight: 700;
-  color: var(--text-main);
-  margin-bottom: 8px;
-}
-
-.report-accessible-body ul {
-  padding-left: 20px;
-  margin: 8px 0;
-}
-
-/* ==========================================================================
    METHODOLOGY & ANALYTICAL LIMITATIONS SECTION
    ========================================================================== */
 .section-methodology {
-  background: var(--bg-main);
   padding: 70px 0;
 }
 
@@ -2452,6 +2318,28 @@ section.section-alt { background: var(--bg-alt); }
   font-size: 0.88rem;
   color: var(--text-muted);
   line-height: 1.6;
+}
+
+/* ==========================================================================
+   GLOSSARY SECTION
+   ========================================================================== */
+.glossary-list {
+  display: grid;
+  gap: 1rem 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  margin: 0;
+  padding: 0;
+}
+.glossary-list dt {
+  font-weight: 700;
+  margin: 0;
+  color: var(--text-main);
+}
+.glossary-list dd {
+  margin: 0.2rem 0 0;
+  opacity: 0.85;
+  line-height: 1.55;
+  color: var(--text-muted);
 }
 
 /* ==========================================================================
