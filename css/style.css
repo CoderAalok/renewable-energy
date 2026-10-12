@@ -634,6 +634,28 @@ section:nth-child(even) {
   color: var(--text-subtle);
   line-height: 1.5;
 }
+
+.stat-source {
+  margin: 10px 0 0;
+  font-size: 0.78rem;
+  line-height: 1.45;
+  color: var(--text-muted);
+}
+.stat-source a {
+  color: var(--primary);
+  font-weight: 700;
+}
+.intro-definition {
+  margin-top: 14px;
+}
+
+.section-data-key {
+  max-width: 820px;
+  margin: 12px auto 0;
+  font-size: 0.84rem;
+  line-height: 1.5;
+  color: var(--text-subtle);
+}
 .data-reference-pill {
   display: inline-flex;
   align-items: center;
