@@ -342,7 +342,7 @@
     }
 
     /* ----------------------------------------------------------------------
-       6. REPORT VIEWER (page count from <select>, preloads adjacent SVGs,
+       6. REPORT VIEWER (page count from <select>, preloads adjacent PNGs,
        handles error state)
        ---------------------------------------------------------------------- */
     function initReportViewer() {
@@ -359,50 +359,11 @@
         const preload = (pageNum) => {
             if (pageNum >= 1 && pageNum <= total) {
                 const img = new Image();
-                img.src = `assets/report/page_${pageNum}.svg`;
+                img.src = `assets/report/page_${pageNum}.png`;
             }
         };
 
         const accessibleContent = $('#report-accessible-content');
-
-        const pageDigests = {
-            1: `<h4>Page 1: Introduction &amp; Project Overview</h4>
-                <p><strong>Academic Course:</strong> Environmental Studies (CA1) &bull; <strong>Department:</strong> Department of Environmental Studies</p>
-                <p><strong>Context &amp; Need:</strong> India is the third-largest consumer of energy worldwide. Rapid economic expansion has historically been tied to thermal coal and oil imports, leading to carbon emissions and environmental stress. This academic research investigates the renewable energy transition as a vital pathway to energy security and sustainable development.</p>`,
-            2: `<h4>Page 2: Review of Literature &amp; Institutional Data</h4>
-                <p><strong>Key Sources:</strong> Ministry of New and Renewable Energy (MNRE), International Energy Agency (IEA), Central Electricity Authority (CEA), and International Renewable Energy Agency (IRENA).</p>
-                <p><strong>Official RE Capacity Breakdown (30 September 2026):</strong></p>
-                <ul>
-                    <li>☀️ <strong>Solar power:</strong> 171.05 GW (57.16%)</li>
-                    <li>🌬️ <strong>Wind power:</strong> 59.20 GW (19.78%)</li>
-                    <li>🌱 <strong>Bioenergy:</strong> 11.75 GW (3.93%)</li>
-                    <li>💧 <strong>Small hydropower (&le;25 MW):</strong> 5.18 GW (1.73%)</li>
-                    <li>🏞️ <strong>Large hydropower (&gt;25 MW):</strong> 52.06 GW (17.40%)</li>
-                    <li>⚡ <strong>Total Renewable Capacity:</strong> 299.25 GW</li>
-                </ul>
-                <p>Over 83% of power-sector investment in 2024 was committed to clean energy. Flagship commitments include 500 GW of non-fossil capacity by 2030 and net-zero greenhouse gas emissions by 2070.</p>`,
-            3: `<h4>Page 3: Description of Product &amp; Attachments</h4>
-                <p><strong>Primary Academic Product:</strong> A 5:02 research-based educational documentary synthesizing India's clean energy transition.</p>
-                <p><strong>Supporting Evidence Portal:</strong> Interactive website hub containing detailed data summaries, challenge breakdowns, social media verification, and academic documentation (Figures 1 through 6).</p>`,
-            4: `<h4>Page 4: Significance of Product / Documentary</h4>
-                <p><strong>Educational Impact:</strong> The audiovisual format makes complex technical topics—such as grid intermittency, pumped-hydro storage, and levelized costs—accessible to students and the wider public.</p>
-                <p><strong>Pedagogical Value:</strong> Blends rigorous secondary research with modern digital communication to inspire sustainable lifestyle choices and public awareness.</p>`,
-            5: `<h4>Page 5: Social Media Coverage &amp; Public Outreach</h4>
-                <p><strong>Platform:</strong> Instagram Reels public dissemination campaign posted on 8 October 2026.</p>
-                <p><strong>Evaluation Snapshot:</strong> Reached 215 views, 15 likes, 5 comments, and 6 shares during the initial academic evaluation window, demonstrating measurable community engagement and digital dissemination.</p>`,
-            6: `<h4>Page 6: Analytical Findings &amp; Future Scope</h4>
-                <p><strong>Synthesis:</strong> Expanding generation capacity is only the first phase. Long-term success requires battery energy storage systems (BESS), Green Energy Corridors for cross-state transmission, and decentralized programs like PM Surya Ghar and PM-KUSUM.</p>
-                <p><strong>Future Scope:</strong> Accelerating green hydrogen adoption in heavy industry and establishing domestic clean technology manufacturing ecosystems.</p>`,
-            7: `<h4>Page 7: Bibliography &amp; References</h4>
-                <p><strong>Official Citations:</strong></p>
-                <ul>
-                    <li>Ministry of New and Renewable Energy (MNRE), Govt. of India &ndash; Monthly Progress Reports.</li>
-                    <li>International Energy Agency (IEA) &ndash; World Energy Investment 2025: India Overview.</li>
-                    <li>International Renewable Energy Agency (IRENA) &ndash; Renewable Capacity Statistics 2026.</li>
-                    <li>Central Electricity Authority (CEA) &ndash; National Electricity Plan &amp; Generation Reports.</li>
-                </ul>
-                <p><em>Submitted for Environmental Studies CA1 Academic Assessment.</em></p>`
-        };
 
         const show = (page) => {
             current = Math.min(Math.max(page, 1), total);
@@ -415,14 +376,14 @@
                 image.alt = `CA1 Report: ${pageTitle}`;
             };
 
-            image.src = `assets/report/page_${current}.svg`;
+            image.src = `assets/report/page_${current}.png`;
             label.textContent = `Page ${current} of ${total}`;
             select.value = String(current);
             prev.disabled = current === 1;
             next.disabled = current === total;
 
-            if (accessibleContent && pageDigests[current]) {
-                accessibleContent.innerHTML = pageDigests[current];
+            if (accessibleContent) {
+                accessibleContent.innerHTML = `<h4>${pageTitle}</h4><p>The scanned report page shown above is page ${current} of ${total}.</p>`;
             }
 
             // Preload adjacent pages for seamless navigation

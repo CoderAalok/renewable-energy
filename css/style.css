@@ -1435,7 +1435,7 @@ section:nth-child(even) {
   background: var(--bg-card);
   border: 1px solid var(--border);
   border-radius: var(--radius-lg);
-  max-width: 940px;
+  max-width: 1100px;
   margin: 0 auto;
   overflow: hidden;
   box-shadow: var(--shadow-md);
@@ -1451,19 +1451,27 @@ section:nth-child(even) {
   gap: 12px;
 }
 .report-view {
-  padding: 30px;
+  padding: clamp(12px, 3vw, 30px);
   background: #cbd5e1;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .report-img {
-  max-width: 720px;
+  display: block;
+  max-width: 900px;
   width: 100%;
+  height: auto;
   border-radius: 8px;
   background: #ffffff;
   box-shadow: var(--shadow-md);
   transition: transform 0.2s ease;
+}
+
+@media (max-width: 600px) {
+  .report-bar { padding: 12px; }
+  .report-nav { width: 100%; justify-content: space-between; }
+  .report-select { width: 100%; }
 }
 
 /* ==========================================================================
